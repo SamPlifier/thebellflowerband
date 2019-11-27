@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+
     const formatPageName = (name) => {
         if (name.includes('[')) {
             let lastSlash = name.lastIndexOf('/');
@@ -11,10 +12,9 @@ const Header = () => {
         } else {
             return name.slice('1');
         }
-
     }
     const pageName = useRouter().route === '/' ? "home" : formatPageName(useRouter().route);
-
+    
     let menuStatus = menuOpen ? 'close' : 'open';
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -30,6 +30,7 @@ const Header = () => {
             <p>{pageName}</p>
             <p className="siteUrl">bellflower<span className="highlight">band</span>.com</p>
         </div>
+        {menuOpen && <Navigation toggleMenu={toggleMenu}/>}
         <style jsx>{`
             .header {
                 width: 100%;
@@ -38,6 +39,9 @@ const Header = () => {
                 grid-template-columns: 50px auto;
                 background: #222222;
                 border-bottom: 1px solid #dcdcd6;
+                z-index: 10;
+                position: fixed;
+                top: 0;
             }
             .navMenu {
                 grid-column-start: 1;
@@ -49,6 +53,7 @@ const Header = () => {
                 justify-content: center;
                 align-items: center;
                 border-right: 1px solid #fff;
+                
             }
             .line--1, .line--2, .line--3 {
                 width: 60%;
@@ -101,7 +106,6 @@ const Header = () => {
             }
         `}
         </style>
-        {menuOpen && <Navigation toggleMenu={toggleMenu}/>}
     </div>
     )
 };

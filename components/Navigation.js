@@ -8,7 +8,6 @@ const Navigation = (props) => {
             <Link href="/albums"><a title="Albums Page"><span className="menu-link">ALBUMS</span></a></Link>
             <Link href="/calendar"><a title="Calendar Page"><span className="menu-link">CALENDAR</span></a></Link>
             <Link href="/media"><a title="Media Page"><span className="menu-link">MEDIA</span></a></Link>
-            <Link href="/social"><a title="Social Media Page"><span className="menu-link">SOCIAL MEDIA</span></a></Link>
             <Link href="/merchandise"><a title="Merchandise Page"><span className="menu-link">MERCH</span></a></Link>
             <style jsx>{`
                 nav {

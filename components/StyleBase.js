@@ -32,6 +32,10 @@ const StyleBase = (props) => {
                 }
                 section {
                     padding: 1rem;
+                    box-sizing: border-box;
+                }
+                .page-layout {
+                    margin-top: 50px;
                 }
             `}</style>
         </div>

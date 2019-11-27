@@ -20,19 +20,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/album/[albumName]": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/albums": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/media": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
