@@ -11198,7 +11198,7 @@ module.exports = "/_next/static/images/album-front-e7c1f2a4a62f97b3fe42cdd82d0d2
 
 /***/ }),
 
-/***/ 4:
+/***/ 1:
 /*!*********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Falbums&absolutePagePath=%2FUsers%2Fsam.davis-castro%2FDesktop%2Fbellflower-site-nextjs%2Fpages%2Falbums.js ***!
   \*********************************************************************************************************************************************************/
@@ -11221,5 +11221,5 @@ module.exports = dll_ea92a4d9664833a26066;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=albums.js.map
