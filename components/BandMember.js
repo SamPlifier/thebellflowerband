@@ -26,6 +26,11 @@ const BandMember = (props) => {
                     grid-template-columns: 100%;
                     z-index: 11;
                 }
+                @media only screen and (min-width: 30em) {
+                    .individual {
+                        grid-template-rows: 1fr 5fr 1fr 3fr;
+                    }
+                }
                 .individual button, .individual img, .individual h2, .individual p {
                     color: #222;
                 }

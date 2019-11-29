@@ -36,15 +36,15 @@ const Media = () => {
                         z-index: 2;
                     }
                     iframe {
-                    width: calc(100vw - 2.1rem);
-                    height: calc(56.25vw - 2.1rem);
-                    border: 2px solid #f69d1a;
-                    display: flex;
-                    justify-content: center;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: 2;
+                        width: calc(100vw - 2.1rem);
+                        height: calc(56.25vw - 2.1rem);
+                        border: 2px solid #f69d1a;
+                        display: flex;
+                        justify-content: center;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 2;
                     }
                     .videoContainer {
                         display: flex;
