@@ -96,10 +96,13 @@ class Calendar extends React.Component {
                             </div>
                         <style jsx>{`
                         .eventCard {
-                            border: 2px solid #f29a2f;
+                            border: 2px solid #f69d1a;
                             padding: 1rem;
                             margin: 2rem 0;
                             text-align: left;
+                        }
+                        .eventCard:last-child {
+                            margin-bottom: 0;
                         }
                         .icon {
                             height: 1.2rem;

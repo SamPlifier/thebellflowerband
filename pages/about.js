@@ -5,7 +5,6 @@ import BandMember from '../components/BandMember';
 const About = () => {
     const [bandMember, setBandMember] = useState(false);
     const viewBandMember = (bandMember) => {
-        console.log(bandMember);
         typeof bandMember === 'number' ? setBandMember(bandMember) : setBandMember(false);
     }
     const bandPhoto = require('../public/bellflower-group.jpg');
@@ -38,7 +37,7 @@ const About = () => {
                 object-fit: cover;
             }
             .orangeBackground {
-                background: #f29a2f;
+                background: #f69d1a;
             }
             .bandPourHouse {
                 height: calc(50vw - 2rem);
@@ -51,10 +50,10 @@ const About = () => {
             .bandMemberCard {
                 padding-top: 2rem;
                 margin: 2rem 0;
-                border: 2px solid #f29a2f;
+                border: 2px solid #f69d1a;
             }
             .bandMemberCard h2 {
-                color: #f29a2f;
+                color: #f69d1a;
             }
             `}</style>
             </section>

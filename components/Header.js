@@ -37,8 +37,8 @@ const Header = () => {
                 display: grid;
                 grid-template-rows: 50px;
                 grid-template-columns: 50px auto;
-                background: #222222;
-                border-bottom: 1px solid #dcdcd6;
+                background: #333;
+                border-bottom: 2px solid #dcdcd6;
                 z-index: 10;
                 position: fixed;
                 top: 0;
@@ -52,13 +52,12 @@ const Header = () => {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                border-right: 1px solid #fff;
-                
+                border-right: 2px solid #fff;
             }
             .line--1, .line--2, .line--3 {
                 width: 60%;
                 height: 2px;
-                background: #f29a2f;
+                background: #f69d1a;
             }
             [data-status="open"] .line--1,
             [data-status="open"] .line--3 {
@@ -102,7 +101,7 @@ const Header = () => {
                 color: #fff;
             }
             .siteUrl .highlight {
-                color: #f29a2f;
+                color: #f69d1a;
             }
         `}
         </style>

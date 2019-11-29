@@ -17,7 +17,7 @@ const Media = () => {
                 <p>SPARKcon Music Festival</p>
                 <div className="videoContainer">
                     <div className="loading">Loading</div>
-                    <iframe src="https://www.youtube.com/embed/Ofv5mz3Jvak" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <div><iframe src="https://www.youtube.com/embed/Ofv5mz3Jvak" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
                 </div>
                 <p>Carrboro Music Festival</p>
                 <div className="videoContainer">
@@ -32,12 +32,18 @@ const Media = () => {
                 <h2>POSTERS</h2>
                 <img className="poster" onClick={() => {posterCycle(posterNum)}} src={require(`../public/bellflowerPoster${posterNum}.jpg`)} />
                 <style jsx>{`
+                    .container {
+                        z-index: 2;
+                    }
                     iframe {
-                    width: calc(100vw - 2rem);
-                    height: calc(56.25vw - 2rem);
-                    border: 2px solid #f29a2f;
+                    width: calc(100vw - 2.1rem);
+                    height: calc(56.25vw - 2.1rem);
+                    border: 2px solid #f69d1a;
                     display: flex;
                     justify-content: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                     z-index: 2;
                     }
                     .videoContainer {
@@ -46,6 +52,9 @@ const Media = () => {
                         justify-content: center;
                         align-items: center;
                         margin: 2rem 0;
+                        position: relative;
+                        width: calc(100vw - 2rem);
+                        height: calc(56.25vw - 2rem);
                     }
                     .loading {
                         display: flex;
@@ -54,17 +63,17 @@ const Media = () => {
                         width: calc(100vw - 2rem);
                         height: calc(56.25vw - 2rem);
                         position: absolute;
-                        background: #f29a2f;
+                        background: #f69d1a;
                         color: #222;
                         z-index: 1;
                     }
                     audio {
                         width: 100%;
                         border-radius: 30px;
-                        border: 2px solid #f29a2f;
+                        border: 2px solid #f69d1a;
                     }
                     .poster {
-                        width: 100%;v bv  b bv vbvv 
+                        width: 100%;
                     }
                     `}</style>
             </section>

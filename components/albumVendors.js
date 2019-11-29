@@ -21,14 +21,14 @@ const AlbumVendors = (props) => {
             margin: 2rem 0;
         }
         .vendor {
-            border: 2px solid #f29a2f;
+            border: 2px solid #f69d1a;
             padding: 1rem;
             text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 2rem;
-            background: #f29a2f;
+            background: #f69d1a;
             color: #222;
         }
         `}</style>

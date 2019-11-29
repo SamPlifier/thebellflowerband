@@ -5,10 +5,11 @@ export default () => <div className="logo">
       grid-area: logo;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
     }
     .logo img {
-      height: 100%;
+      width: 80%;
+      min-width: 300px;
     }
   `}</style>
 </div>

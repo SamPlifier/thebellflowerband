@@ -15,7 +15,7 @@ const Navigation = (props) => {
                     width: 100vw;
                     position: absolute;
                     top: 50px;
-                    background: #222;
+                    background: #333;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
@@ -27,11 +27,13 @@ const Navigation = (props) => {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    color: #dcdcd6;
+                    color: #fff;
+                    font-family: 'BenchNine',sans-serif;
+                    font-size: 2rem;
                 }
                 a:hover {
                     background: #dcdcd6;
-                    color: #222;
+                    color: #333;
                 }
             `}</style>
         </nav>

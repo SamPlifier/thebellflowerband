@@ -7,7 +7,7 @@ const NumberOfEvents = (props) => {
         }
     }
     const error = () => {
-        return <p className="title">Sorry, calendar data could not be fetched. Certain types of errors will automatically notify Sam (the keyboard guy and web developer.) Refresh this page in a few seconds to try again.</p>
+        return <p className="title">Sorry, calendar data could not be fetched. Refresh this page in a few seconds to try again.</p>
     }
     return props.error ? error() : noError();
 }

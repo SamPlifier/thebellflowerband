@@ -14,22 +14,20 @@ const Home = () => {
       <style jsx>{`
       section {
         display: grid;
-        height: calc(100vh - 50px);
+        height: calc(100vh - 52px);
         grid-template-areas: "logo logo" 
                              "description description"
                              "album album";
-        grid-template-rows: 15% 15% 50%;
+        grid-template-rows: 33% 33% 33%;
         grid-template-columns: 50% 50%;
       }
       p {
         grid-area: description;
       }
-      .test {
-        height: 200px;
-        background: red;
-      }
       .album {
         grid-area: album;
+        display: flex;
+        align-items: top;
       }
       `}</style>
     </StyleBase>

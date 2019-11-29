@@ -5,7 +5,6 @@ const CtaStyle = `
     background: #d81e5b;
     padding: 1rem 1.5rem;
     border: 2px solid #fff;
-    transition: all .5s ease-in;
 `;
 
 const Cta = (props) => {
@@ -16,11 +15,6 @@ const Cta = (props) => {
             <style jsx>{`
                 a {
                     ${CtaStyle}
-                }
-                .cta {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                 }
                 [data-link-to="/albums"] {
                     grid-area: album;

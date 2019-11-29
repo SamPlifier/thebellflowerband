@@ -1,7 +1,6 @@
 import React from 'react'
 import App from 'next/app';
 import Header from '../components/Header';
-import HeaFooterder from '../components/Footer';
 import StyleBase from '../components/StyleBase';
 import Footer from '../components/Footer';
 

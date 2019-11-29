@@ -31,10 +31,15 @@ const ViewAlbumSides = (props) => {
                 grid-template-rows: "3rem 3rem";
                 grid-template-columns: "50% 50%";
                 grid-row-gap: 2rem;
+                grid-column-gap: 2rem;
                 margin: 2rem 0;
             }
+            .album-controls button {
+                background: transparent;
+                border: none;
+            }
             .active {
-                color: #f29a2f;
+                color: #f69d1a;
             }
             .front {
                 grid-area: front;

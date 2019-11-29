@@ -2,7 +2,6 @@ import bandMembers from '../public/musicians.js';
 
 const BandMember = (props) => {
     const person = props.viewPerson;
-    console.log(props);
     
     if (typeof props.viewPerson === 'number') {
         return (
@@ -18,7 +17,7 @@ const BandMember = (props) => {
                     width: calc(100vw - 4rem);
                     top: 1rem;
                     left: 1rem;
-                    background: linear-gradient(45deg,#ef447e,#FFC107);
+                    background: linear-gradient(45deg,#ef447e,#f69d1a);
                     padding: 0 1rem;
                     text-align: left;
                     display: grid;
@@ -48,6 +47,10 @@ const BandMember = (props) => {
                 .individual p {
                     grid-area: description;
                     margin-top: 0;
+                }
+                button {
+                    border: none;
+                    background: transparent;
                 }
                 `}</style>
             </div>

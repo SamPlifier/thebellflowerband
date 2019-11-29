@@ -9,7 +9,7 @@ const Albums = () => {
                 {albumInfo.map((album) => {
                     return (
                         <div key={album.name} className="album">
-                            <p>Album: {album.name}</p>
+                            <h2>{album.name}</h2>
                             <p className="deets">click album for details</p>
                             <Link href="/album/[albumName]" as={`/album/${album.urlName}`}>
                                 <div>
@@ -35,7 +35,7 @@ const Albums = () => {
                 width: 100%;
             }
             .deets {
-                color: #f29a2f;
+                color: #f69d1a;
             }
             `}
             </style>
