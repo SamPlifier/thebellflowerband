@@ -1,4 +1,3 @@
-import fetch from 'isomorphic-unfetch';
 import StyleBase from '../components/StyleBase';
 import Cta from '../components/Cta';
 import Logo from '../components/Logo';

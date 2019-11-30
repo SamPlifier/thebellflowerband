@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import StyleBase from '../components/StyleBase';
 import merchandise from '../public/merchInfo.js';
 const Merch = () => {

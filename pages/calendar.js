@@ -1,7 +1,7 @@
+import StyleBase from '../components/StyleBase';
 import React from 'react';
 import axios from 'axios';
 import NumberOfEvents from '../components/NumberOfEvents';
-import StyleBase from '../components/StyleBase';
 class Calendar extends React.Component {
     state = {
         calendarEvents: [],
