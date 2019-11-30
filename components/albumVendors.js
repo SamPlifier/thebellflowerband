@@ -1,6 +1,6 @@
 const AlbumVendors = (props) => {
     return (
-        <>
+        <div>
         <h2>PURCHASE ON</h2>
         <div className="vendors">
             {props.vendor.map(vendor => {
@@ -38,7 +38,7 @@ const AlbumVendors = (props) => {
             }
         `}</style>
         </div>
-        </>
+        </div>
     )
 }
 
