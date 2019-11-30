@@ -1,6 +1,6 @@
 import StyleBase from '../components/StyleBase';
 import albumInfo from '../public/albumInfo.js';
-import AlbumVendors from '../components/AlbumVendors';
+// import AlbumVendors from '../components/AlbumVendors';
 import Link from 'next/link';
 const Albums = () => {
     return (
@@ -18,7 +18,7 @@ const Albums = () => {
                                 </div> 
                                 </div>
                             </Link>
-                            <AlbumVendors vendor={album.vendors}/>
+                            {/* <AlbumVendors vendor={album.vendors}/> */}
                         </div>
                     )
                 })}
