@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -637,7 +637,7 @@ module.exports = "/_next/static/images/album-right-9b7c7940185dfb61ac901a57a1f75
 
 /***/ }),
 
-/***/ 6:
+/***/ 3:
 /*!******************************************!*\
   !*** multi ./pages/album/[albumName].js ***!
   \******************************************/

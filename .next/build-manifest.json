@@ -1,55 +1,32 @@
 {
-  "devFiles": [],
+  "devFiles": [
+    "static/development/dll/dll_90e8ea1802b868f0c448.js",
+    "static/development/dll/dll_90e8ea1802b868f0c448.js.map"
+  ],
   "pages": {
-    "/": [
-      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
-      "static/chunks/commons.92266bc8e3dff447f978.js",
-      "static/runtime/main-97ce5c01f2b1ff6e9df5.js"
-    ],
     "/_app": [
-      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
-      "static/chunks/commons.92266bc8e3dff447f978.js",
-      "static/runtime/main-97ce5c01f2b1ff6e9df5.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_error": [
-      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
-      "static/chunks/commons.92266bc8e3dff447f978.js",
-      "static/runtime/main-97ce5c01f2b1ff6e9df5.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/about": [
-      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
-      "static/chunks/commons.92266bc8e3dff447f978.js",
-      "static/runtime/main-97ce5c01f2b1ff6e9df5.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/album/[albumName]": [
-      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
-      "static/chunks/commons.92266bc8e3dff447f978.js",
-      "static/runtime/main-97ce5c01f2b1ff6e9df5.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/albums": [
-      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
-      "static/chunks/commons.92266bc8e3dff447f978.js",
-      "static/runtime/main-97ce5c01f2b1ff6e9df5.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
-    "/calendar": [
-      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
-      "static/chunks/commons.92266bc8e3dff447f978.js",
-      "static/runtime/main-97ce5c01f2b1ff6e9df5.js"
-    ],
-    "/index": [
-      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
-      "static/chunks/commons.92266bc8e3dff447f978.js",
-      "static/runtime/main-97ce5c01f2b1ff6e9df5.js"
-    ],
-    "/media": [
-      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
-      "static/chunks/commons.92266bc8e3dff447f978.js",
-      "static/runtime/main-97ce5c01f2b1ff6e9df5.js"
-    ],
-    "/merchandise": [
-      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
-      "static/chunks/commons.92266bc8e3dff447f978.js",
-      "static/runtime/main-97ce5c01f2b1ff6e9df5.js"
+    "/next/dist/pages/_error": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }
