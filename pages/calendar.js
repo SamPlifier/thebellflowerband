@@ -86,15 +86,17 @@ class Calendar extends React.Component {
                             <h3>{calEvent.summary}</h3>
                             <div className="detailsContainer">
                                 <div className="details">
-                                    <div className="event"><img className="icon" src={require('../public/time-icon-01.svg')} /><p className="time">{this.date(calEvent.start.dateTime, 'day')}, {this.date(calEvent.start.dateTime, 'month')} {this.date(calEvent.start.dateTime, 'dayNum')} <br /> {this.date(calEvent.start.dateTime, 'localTime')} - {this.date(calEvent.end.dateTime, 'localTime')}</p></div>
-                                    <div className="event"><img className="icon" src={require('../public/pin-icon-01.svg')} /><p className="pin"><a className="directions" alt="directions link" href={this.formatMapsUrl(calEvent.location)}>{calEvent.location}</a></p></div>
+                                    <div className="event"><img className="icon" src={require('../public/time-icon-01.svg')} /><p className="time">{this.date(calEvent.start.dateTime, 'day')}, {this.date(calEvent.start.dateTime, 'month')} {this.date(calEvent.start.dateTime, 'dayNum')}  {this.date(calEvent.start.dateTime, 'localTime')} - {this.date(calEvent.end.dateTime, 'localTime')}</p></div>
+                                    <div className="event"><img className="icon" src={require('../public/pin-icon-01.svg')} /><p className="pin">{calEvent.location}</p></div>
                                     <div className="event"><img className="icon" src={require('../public/description-icon-01.svg')} /><p className="description">{calEvent.description}</p></div>
-                                    <div className="event"><img className="icon" src={require('../public/calendar-icon-01.svg')} /><p className="calendar"><a className="openInCalendar" href={calEvent.htmlLink}>View in Google Calendar</a></p></div>
+                                    <div className="buttons">
+                                        <div className="event"><img className="icon" src={require('../public/navigate-icon-01.svg')} /><p className="navigate"><a className="directions" alt="directions link" href={this.formatMapsUrl(calEvent.location)}>Navigate</a></p></div>
+                                        <div className="event"><img className="icon" src={require('../public/calendar-icon-01.svg')} /><p className="calendar"><a className="openInCalendar" href={calEvent.htmlLink}>Calendar</a></p></div>
+                                    </div>
                                 </div>
                             </div>
                         <style jsx>{`
                         .eventCard {
-                            border: 2px solid #f69d1a;
                             padding: 1rem;
                             margin: 2rem 0;
                             text-align: left;
@@ -122,7 +124,60 @@ class Calendar extends React.Component {
                         }                            
                         .calendar {
                             margin-left: 10px;
-                        }                                
+                        }
+                        .navigate {
+                            margin-left: 9px;
+                        }
+                        .buttons {
+                            display: flex;
+                            justify-content: center;
+                            margin: 1rem 0;
+                            flex-direction: column;
+                        }
+                        .event {
+                            width: 100%;
+                        }
+                        .buttons .event:first-child {
+                            margin: 0 0 1rem 0;
+                        }
+                        .buttons .event:last-child {
+                            margin: 1rem 0 0 0;
+                        }
+                        
+                        .buttons:hover {
+                            cursor: pointer;
+                        }
+                        .buttons .event {
+                            width: 100%;
+                            border: 2px solid #fff;
+                            text-align: center;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: #f69d1a;
+                            transition: background ease .5s;
+                        }
+
+                        .buttons .event:hover {
+                            background: #fff;
+                        }
+                        .buttons .event .navigate .directions, .buttons .event .calendar .openInCalendar {
+                            color: #333;
+                        }
+                        .buttons .icon {
+                            top: 0px;
+                        }
+                        @media only screen and (min-width:700px) {
+                            .buttons {
+                                flex-direction: row;
+                            }
+                            .buttons .event:first-child {
+                                margin: 0 1rem 0 0;
+                            }
+                            .buttons .event:last-child {
+                                margin: 0 0 0 1rem;
+                            }
+                        }
                         `}</style>
                         </div>
             })

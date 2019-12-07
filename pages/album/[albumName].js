@@ -13,9 +13,9 @@ const Album = () => {
                         <div key={i}>
                             <AlbumVendors vendor={album.vendors}/>
                             <h2>INFO</h2>
-                        <p className="detail">Album Name<br/><span>{album.name}</span></p>
-                        <p className="detail">Release Date<br/><span>{album.releaseDate}</span></p>
-                        <p className="detail">Composers<br/><span>{album.writers.map((writer, j) => {
+                            <p className="detail">Album Name<br/><span>{album.name}</span></p>
+                            <p className="detail">Release Date<br/><span>{album.releaseDate}</span></p>
+                            <p className="detail">Composers<br/><span>{album.writers.map((writer, j) => {
                             if (j+1 < album.writers.length) {
                                 return <span key={j}>{`${writer}, `}</span>
                             } else {

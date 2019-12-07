@@ -38,7 +38,6 @@ const Header = () => {
                 grid-template-rows: 50px;
                 grid-template-columns: 50px auto;
                 background: #333;
-                border-bottom: 2px solid #dcdcd6;
                 z-index: 10;
                 position: fixed;
                 top: 0;
@@ -52,7 +51,6 @@ const Header = () => {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                border-right: 2px solid #fff;
             }
             .line--1, .line--2, .line--3 {
                 width: 60%;

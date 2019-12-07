@@ -19,7 +19,6 @@ const Navigation = (props) => {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
-                    border-top: 1px solid #dcdcd6;
                     z-index: 10;
                 }
                 a {

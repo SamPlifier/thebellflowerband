@@ -15,8 +15,10 @@ const BandMember = (props) => {
                     position: fixed;
                     height: calc(100vh - 2rem);
                     width: calc(100vw - 4rem);
-                    top: 1rem;
-                    left: 1rem;
+                    max-width: 800px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                     background: linear-gradient(45deg,#ef447e,#f69d1a);
                     padding: 0 1rem;
                     text-align: left;
@@ -38,10 +40,13 @@ const BandMember = (props) => {
                     grid-area: close;
                     font-size: 1.6rem;
                 }
+                .individual button:hover {
+                    cursor: pointer;
+                }
                 .individual img {
                     grid-area: photos;
                     width: 100%;
-                    height: 100%;
+                    max-height: 100%;
                     object-fit: cover;
                     object-position: top;
                     opacity: .8;

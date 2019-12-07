@@ -22,7 +22,7 @@ const AlbumVendors = (props) => {
             margin: 2rem 0;
         }
         .vendor {
-            border: 2px solid #f69d1a;
+            border: 2px solid #fff;
             padding: 1rem;
             text-align: center;
             display: flex;
@@ -31,6 +31,10 @@ const AlbumVendors = (props) => {
             height: 2rem;
             background: #f69d1a;
             color: #222;
+            transition: background ease .5s;
+        }
+        .vendor:hover {
+            background: #fff;
         }
         `}</style>
         <style jsx global>{`

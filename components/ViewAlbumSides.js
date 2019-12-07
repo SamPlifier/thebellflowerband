@@ -16,10 +16,10 @@ const ViewAlbumSides = (props) => {
                 <img src=""/>
                 <img className="icon" src={require(`../public/albums/${album}/album-${inView}.png`)} />
                     <div className="album-controls">
-                        <button className={`front ${inView === 'front' ? 'active' : ''}`} onClick={() => {updateInView('front')}}>Front<br/>Cover</button>
-                        <button className={`back ${inView === 'back' ? 'active' : ''}`} onClick={() => {updateInView('back')}}>Back<br/>Cover</button>
-                        <button className={`left ${inView === 'left' ? 'active' : ''}`} onClick={() => {updateInView('left')}}>Inside<br/>Left</button>
-                        <button className={`right ${inView === 'right' ? 'active' : ''}`} onClick={() => {updateInView('right')}}>Inside<br/>Right</button>
+                        <button className={`front ${inView === 'front' ? 'active' : ''}`} onClick={() => {updateInView('front')}}>Front Cover</button>
+                        <button className={`back ${inView === 'back' ? 'active' : ''}`} onClick={() => {updateInView('back')}}>Back Cover</button>
+                        <button className={`left ${inView === 'left' ? 'active' : ''}`} onClick={() => {updateInView('left')}}>Inside Left</button>
+                        <button className={`right ${inView === 'right' ? 'active' : ''}`} onClick={() => {updateInView('right')}}>Inside Right</button>
                     </div>
                 </div>
             </section>
@@ -35,11 +35,18 @@ const ViewAlbumSides = (props) => {
                 margin: 2rem 0;
             }
             .album-controls button {
-                background: transparent;
-                border: none;
+                border: 2px solid #fff;
+                padding: 1rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #f69d1a;
+                color: #222;
+                transition: background ease .5s;
             }
-            .active {
-                color: #f69d1a;
+            .album-controls button.active {
+                background: #fff;
             }
             .front {
                 grid-area: front;
@@ -53,9 +60,7 @@ const ViewAlbumSides = (props) => {
             .right {
                 grid-area: right;
             }
-            .album-container {
- 
-            }
+
             img {
                 width: 100%;
             }

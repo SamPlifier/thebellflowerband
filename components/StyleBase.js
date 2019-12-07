@@ -17,28 +17,41 @@ const StyleBase = (props) => {
                     font-size: 2.4rem;
                     text-align: center;
                 }
+                h2 {
+                }
                 a, p, li, button, ul, ol, div, label {
                     font-family: 'Open Sans', sans-serif;
                     font-size: 1.2rem;
+                    line-height: 2rem;
                     color: #fff;
                 }
                 input, textarea {
                     font-family: 'Open Sans', sans-serif;
                     font-size: 1.2rem;
+                    line-height: 2rem;
                     color: #222;
                   }
                 ul, ol {
                     list-style-type: none;
                     margin: 0;
                     padding: 0;
+                    line-height: 2rem;
                 }
                 a {
                     text-decoration: none;
                 }
+
                 section {
                     padding: 1rem;
                     box-sizing: border-box;
                 }
+
+                @media only screen and (min-width:500px) {
+                    section {
+                        padding: 1rem 6rem;
+                    }
+                }
+
                 .page-layout {
                     margin-top: 50px;
                 }

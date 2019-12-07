@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="socialIcons">
                     <a alt="bellflower youtube" href="https://www.youtube.com/channel/UCMt7r35vGbqSH_xX2iglYFA?view_as=subscriber"><img src={require('../public/social_icons/youtube.svg')} /></a>
                     <a alt="bellflower facebook" href="https://www.facebook.com/Bellflowermusic/"><img src={require('../public/social_icons/facebook.svg')} /></a>
-                    <a alt="bellflower twitter" href="https://twitter.com/hashtag/bellflowermusic?src=hash"><img src={require('../public/social_icons/twitter.svg')} /></a>
+                    <a alt="bellflower twitter" href="https://www.instagram.com/bellflower_band/?hl=en"><img src={require('../public/social_icons/instagram.svg')} /></a>
                 </div>
             </section>
         <style jsx>{`
@@ -35,6 +35,7 @@ const Footer = () => {
           .socialIcons {
               filter: invert(100%);
               height: 50px;
+              margin-top: 2rem;
           }
         `}</style>
         </StyleBase>

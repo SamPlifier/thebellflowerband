@@ -4,9 +4,9 @@
 	 viewBox="0 0 28.35 28.35" style="enable-background:new 0 0 28.35 28.35;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
 </style>
 <path class="st0" d="M14.17,0C6.35,0,0,6.35,0,14.17s6.35,14.17,14.17,14.17S28.35,22,28.35,14.17S22,0,14.17,0z M14.17,25.7
 	c-6.37,0-11.53-5.16-11.53-11.53S7.81,2.65,14.17,2.65c6.37,0,11.53,5.16,11.53,11.53S20.54,25.7,14.17,25.7z"/>
-<polyline class="st1" points="8.99,20.02 14.51,14.5 14.51,3.6 "/>
+<polyline class="st1" points="8.99,20.02 14.51,14.94 14.51,4.92 "/>
 </svg>
