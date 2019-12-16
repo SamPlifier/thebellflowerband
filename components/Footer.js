@@ -16,6 +16,9 @@ const Footer = () => {
                 </div>
             </section>
         <style jsx>{`
+        .page-layout {
+            margin-top: 0;
+        }
         .footer {
             border-top: 2px solid #fff;
         }

@@ -21,7 +21,7 @@ const Header = () => {
     }
     return (
     <div className="header">
-        <div className="navMenu" data-status={menuStatus} onClick={toggleMenu}>
+        <div className="navMenu" tabIndex="0" data-status={menuStatus} onClick={toggleMenu}>
             <div className="line--1"></div>
             <div className="line--2"></div>
             <div className="line--3"></div>
@@ -89,6 +89,7 @@ const Header = () => {
                 justify-content: space-between;
                 align-items: center;
                 padding: 0 1rem;
+                height: 50px;
             }
             .siteUrl {
                 grid-column-start: 2;

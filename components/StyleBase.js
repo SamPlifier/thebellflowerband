@@ -10,6 +10,9 @@ const StyleBase = (props) => {
                     text-align: center;
                     background: #333;
                 }
+                body {
+                    margin-top: 50px;
+                }
                 h1, h2, h3, h4, h5, h6 {
                     font-family: 'BenchNine', sans-serif;
                     font-weight: 300;
@@ -52,9 +55,6 @@ const StyleBase = (props) => {
                     }
                 }
 
-                .page-layout {
-                    margin-top: 50px;
-                }
                 .map {
                     background: 
                 }

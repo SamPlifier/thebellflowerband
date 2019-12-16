@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Navigation = (props) => {
     return (
-        <nav onClick={props.toggleMenu}>
+        <nav onClick={props.toggleMenu} tabIndex="0">
             <Link href="/"><a title="About Page"><span className="menu-link">HOME</span></a></Link>
             <Link href="/about"><a title="About Page"><span className="menu-link">ABOUT</span></a></Link>
             <Link href="/albums"><a title="Albums Page"><span className="menu-link">ALBUMS</span></a></Link>

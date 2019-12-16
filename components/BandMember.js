@@ -24,13 +24,13 @@ const BandMember = (props) => {
                     text-align: left;
                     display: grid;
                     grid-template-areas: "close" "photos" "person" "description";
-                    grid-template-rows: 1fr 3fr 1fr 5fr;
+                    grid-template-rows: 70px 3fr 1fr 5fr;
                     grid-template-columns: 100%;
                     z-index: 11;
                 }
                 @media only screen and (min-width: 30em) {
                     .individual {
-                        grid-template-rows: 1fr 5fr 1fr 3fr;
+                        grid-template-rows: 70px 5fr 1fr 3fr;
                     }
                 }
                 .individual button, .individual img, .individual h2, .individual p {
@@ -61,6 +61,23 @@ const BandMember = (props) => {
                 button {
                     border: none;
                     background: transparent;
+                }
+                @media only screen and (orientation: landscape) {
+                    .individual {
+                        grid-template-rows: 70px 3fr 2fr;
+                        grid-template-columns: 40% 60%;
+                        column-gap: 1rem;
+                        grid-template-areas: "close close" "photos description" "person description";
+                    }
+                    .individual h2 {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .individual p {
+                        padding: 0 1rem 1rem 0;
+                        overflow-y: scroll;
+                    }
                 }
                 `}</style>
             </div>

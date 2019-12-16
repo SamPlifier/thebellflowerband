@@ -17,16 +17,17 @@ const Home = () => {
         grid-template-areas: "logo logo" 
                              "description description"
                              "album album";
-        grid-template-rows: 33% 33% 33%;
+        grid-template-rows: 25% 25% 50%;
         grid-template-columns: 50% 50%;
       }
       p {
         grid-area: description;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
       }
       .album {
         grid-area: album;
-        display: flex;
-        align-items: top;
       }
       `}</style>
     </StyleBase>
