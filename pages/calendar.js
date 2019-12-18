@@ -91,7 +91,7 @@ class Calendar extends React.Component {
                                     <div className="event"><img className="icon" src={require('../public/description-icon-01.svg')} /><p className="description">{calEvent.description}</p></div>
                                     <div className="buttons">
                                         <a className="directions" alt="directions link" href={this.formatMapsUrl(calEvent.location)}><div className="event"><img className="icon" src={require('../public/navigate-icon-01.svg')} /><p className="navigate">Navigate</p></div></a>
-                                        <a className="openInCalendar" href={calEvent.htmlLink}><div className="event"><img className="icon" src={require('../public/calendar-icon-01.svg')} /><p className="calendar">Calendar</p></div></a>
+                                        <a className="openInCalendar" alt="view in google calendar" href={calEvent.htmlLink}><div className="event"><img className="icon" src={require('../public/calendar-icon-01.svg')} /><p className="calendar">Calendar</p></div></a>
                                     </div>
                                 </div>
                             </div>
@@ -141,7 +141,6 @@ class Calendar extends React.Component {
                         .buttons .event:last-child {
                             margin: 1rem 0 0 0;
                         }
-                        
                         .buttons:hover {
                             cursor: pointer;
                         }
@@ -169,7 +168,10 @@ class Calendar extends React.Component {
                         @media only screen and (min-width:700px) {
                             .buttons {
                                 flex-direction: row;
-                                justify-content: space-around;
+                                justify-content: space-between;
+                            }
+                            .buttons a, .buttons a {
+                                width: 95%;
                             }
                             .buttons .event:first-child, .buttons .event:last-child {
                                 margin: 0;

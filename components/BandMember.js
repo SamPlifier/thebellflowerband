@@ -28,11 +28,6 @@ const BandMember = (props) => {
                     grid-template-columns: 100%;
                     z-index: 11;
                 }
-                @media only screen and (min-width: 30em) {
-                    .individual {
-                        grid-template-rows: 70px 5fr 1fr 3fr;
-                    }
-                }
                 .individual button, .individual img, .individual h2, .individual p {
                     color: #222;
                 }
@@ -57,15 +52,25 @@ const BandMember = (props) => {
                 .individual p {
                     grid-area: description;
                     margin-top: 0;
+                    overflow-y: scroll;
                 }
                 button {
                     border: none;
                     background: transparent;
                 }
+                @media only screen and (min-width: 30em) {
+                    .individual {
+                        grid-template-rows: 70px 5fr 1fr 3fr;
+                    }
+                    .individual p {
+                        position: relative;
+                        top: -.5rem;
+                    }
+                }
                 @media only screen and (orientation: landscape) {
                     .individual {
-                        grid-template-rows: 70px 3fr 2fr;
-                        grid-template-columns: 40% 60%;
+                        grid-template-rows: 70px 2fr 2fr;
+                        grid-template-columns: 50% 50%;
                         column-gap: 1rem;
                         grid-template-areas: "close close" "photos description" "person description";
                     }
@@ -76,7 +81,6 @@ const BandMember = (props) => {
                     }
                     .individual p {
                         padding: 0 1rem 1rem 0;
-                        overflow-y: scroll;
                     }
                 }
                 `}</style>
