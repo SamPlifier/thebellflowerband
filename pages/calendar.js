@@ -114,6 +114,7 @@ class Calendar extends React.Component {
                             display: flex;
                             align-items: baseline;
                             width: 100%;
+                            word-break: break-all;
                         }
                         .time {
                             margin-left: 10px;
@@ -171,12 +172,13 @@ class Calendar extends React.Component {
                                 flex-direction: row;
                                 justify-content: space-between;
                             }
-                            .buttons a, .buttons a {
-                                width: 95%;
-                            }
                             .buttons .event:first-child, .buttons .event:last-child {
                                 margin: 0;
                                 padding: 0 1rem;
+                                box-sizing: border-box;
+                            }
+                            .directions, .openInCalendar {
+                                width: calc(50% - 1rem);
                             }
                         }
                         `}</style>
