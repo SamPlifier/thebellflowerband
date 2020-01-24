@@ -27,16 +27,16 @@
   },
   "chunks": {
     "byName": {
-      "static/4_A80l1O-zOXLI-HUPejz/pages/_app.js": 0,
-      "static/4_A80l1O-zOXLI-HUPejz/pages/_document.js": 1,
-      "static/4_A80l1O-zOXLI-HUPejz/pages/_error.js": 2,
-      "static/4_A80l1O-zOXLI-HUPejz/pages/about.js": 3,
-      "static/4_A80l1O-zOXLI-HUPejz/pages/album/[albumName].js": 4,
-      "static/4_A80l1O-zOXLI-HUPejz/pages/albums.js": 5,
-      "static/4_A80l1O-zOXLI-HUPejz/pages/calendar.js": 6,
-      "static/4_A80l1O-zOXLI-HUPejz/pages/index.js": 7,
-      "static/4_A80l1O-zOXLI-HUPejz/pages/media.js": 8,
-      "static/4_A80l1O-zOXLI-HUPejz/pages/merchandise.js": 9
+      "static/DFyuqkcXwa5Pv3ol2EG23/pages/_app.js": 0,
+      "static/DFyuqkcXwa5Pv3ol2EG23/pages/_document.js": 1,
+      "static/DFyuqkcXwa5Pv3ol2EG23/pages/_error.js": 2,
+      "static/DFyuqkcXwa5Pv3ol2EG23/pages/about.js": 3,
+      "static/DFyuqkcXwa5Pv3ol2EG23/pages/album/[albumName].js": 4,
+      "static/DFyuqkcXwa5Pv3ol2EG23/pages/albums.js": 5,
+      "static/DFyuqkcXwa5Pv3ol2EG23/pages/calendar.js": 6,
+      "static/DFyuqkcXwa5Pv3ol2EG23/pages/index.js": 7,
+      "static/DFyuqkcXwa5Pv3ol2EG23/pages/media.js": 8,
+      "static/DFyuqkcXwa5Pv3ol2EG23/pages/merchandise.js": 9
     },
     "bySource": {},
     "usedIds": [

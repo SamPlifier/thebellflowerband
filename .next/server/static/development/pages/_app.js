@@ -2892,9 +2892,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
 /* harmony import */ var _components_StyleBase__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/StyleBase */ "./components/StyleBase.js");
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _public_bellflower_favicon_ico__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../public/bellflower_favicon.ico */ "./public/bellflower_favicon.ico");
+/* harmony import */ var _public_bellflower_favicon_ico__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_public_bellflower_favicon_ico__WEBPACK_IMPORTED_MODULE_7__);
 
 var _jsxFileName = "/Users/sam.davis-castro/Desktop/bellflower-site-nextjs/pages/_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
 
 
 
@@ -2910,25 +2916,49 @@ class BellflowerApp extends next_app__WEBPACK_IMPORTED_MODULE_2___default.a {
     return __jsx(_components_StyleBase__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      __source: {
-        fileName: _jsxFileName,
         lineNumber: 13
       },
       __self: this
-    }), __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
+    }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_6___default.a, {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 14
       },
       __self: this
-    })), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }, __jsx("meta", {
+      name: "viewport",
+      content: "initial-scale=1.0, width=device-width",
+      key: "viewport",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 15
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: "shortcut icon",
+      type: "icon",
+      href: _public_bellflower_favicon_ico__WEBPACK_IMPORTED_MODULE_7___default.a,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    })), __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: this
+    }), __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    })), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
       },
       __self: this
     }));
@@ -2937,6 +2967,17 @@ class BellflowerApp extends next_app__WEBPACK_IMPORTED_MODULE_2___default.a {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (BellflowerApp);
+
+/***/ }),
+
+/***/ "./public/bellflower_favicon.ico":
+/*!***************************************!*\
+  !*** ./public/bellflower_favicon.ico ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/bellflower_favicon-9a6097de6c031a991be1fb0a0fb7fe51.ico";
 
 /***/ }),
 
@@ -3092,6 +3133,17 @@ module.exports = require("core-js/library/fn/object/keys");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/promise");
+
+/***/ }),
+
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
 
 /***/ }),
 

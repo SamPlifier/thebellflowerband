@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import StyleBase from '../components/StyleBase';
 import React from 'react';
 import axios from 'axios';
@@ -184,15 +185,18 @@ class Calendar extends React.Component {
         )
         return (
             <StyleBase>
-            <section className="calendarPageContainer">
-                <div className="calendarPage">
-                    <div className="numOfEvents">
-                        {/* <p className="title">There are {this.state.calendarEvents.length} upcoming events this month.</p> */}
-                        <NumberOfEvents events={this.state.calendarEvents.length} error={this.state.fetchError}/>
+                <Head>
+                    <title>Calendar</title>
+                </Head>
+                <section className="calendarPageContainer">
+                    <div className="calendarPage">
+                        <div className="numOfEvents">
+                            {/* <p className="title">There are {this.state.calendarEvents.length} upcoming events this month.</p> */}
+                            <NumberOfEvents events={this.state.calendarEvents.length} error={this.state.fetchError}/>
+                        </div>
+                    <div className="eventListContainer">{eventsList}</div>
                     </div>
-                <div className="eventListContainer">{eventsList}</div>
-                </div>
-            </section>
+                </section>
             </StyleBase>
         )
     }

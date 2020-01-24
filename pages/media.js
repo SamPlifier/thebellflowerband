@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import StyleBase from '../components/StyleBase';
 import { useState } from 'react';
 
@@ -10,8 +11,12 @@ const Media = () => {
             setPosterNum(posterNum + 1);
         }
     }
+
     return (
         <StyleBase>
+            <Head>
+                <title>Media</title>
+            </Head>
             <section>
                 <h2>VIDEO</h2>
                 <p>SPARKcon Music Festival</p>

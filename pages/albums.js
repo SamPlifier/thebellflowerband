@@ -1,10 +1,15 @@
+import Head from 'next/head';
 import StyleBase from '../components/StyleBase';
 import albumInfo from '../public/albumInfo.js';
 import AlbumVendors from '../components/AlbumVendors';
 import Link from 'next/link';
+
 const Albums = () => {
     return (
         <StyleBase>
+            <Head>
+                <title>Albums</title>
+            </Head>
             <section>
                 {albumInfo.map((album) => {
                     return (

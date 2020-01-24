@@ -1,7 +1,9 @@
+import Head from 'next/head';
 import StyleBase from '../components/StyleBase';
 import { useState } from 'react';
 import bandMembers from '../public/musicians.js';
 import BandMember from '../components/BandMember';
+
 const About = () => {
     const [bandMember, setBandMember] = useState(false);
     const viewBandMember = (bandMember) => {

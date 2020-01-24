@@ -14,7 +14,7 @@ const BandMember = (props) => {
                 .individual {
                     position: fixed;
                     height: calc(100vh - 2rem);
-                    width: calc(100vw - 4rem);
+                    width: calc(100vw - 2rem);
                     max-width: 800px;
                     top: 50%;
                     left: 50%;
@@ -27,6 +27,7 @@ const BandMember = (props) => {
                     grid-template-rows: 70px 3fr 1fr 5fr;
                     grid-template-columns: 100%;
                     z-index: 11;
+                    box-sizing: border-box;
                 }
                 .individual button, .individual img, .individual h2, .individual p {
                     color: #222;
@@ -62,25 +63,24 @@ const BandMember = (props) => {
                     .individual {
                         grid-template-rows: 70px 5fr 1fr 3fr;
                     }
-                    .individual p {
-                        position: relative;
-                        top: -.5rem;
-                    }
                 }
                 @media only screen and (orientation: landscape) {
                     .individual {
-                        grid-template-rows: 70px 2fr 2fr;
+                        grid-template-rows: auto auto;
                         grid-template-columns: 50% 50%;
+                        -webkit-column-gap: 1rem;
                         column-gap: 1rem;
-                        grid-template-areas: "close close" "photos description" "person description";
+                        grid-template-areas: "person close" "description photos";
+                        padding: 1rem;
+                        max-height: 28rem;
                     }
                     .individual h2 {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
-                    .individual p {
-                        padding: 0 1rem 1rem 0;
+                    .individual img {
+                        width: calc(100% - 1rem);
                     }
                 }
                 `}</style>

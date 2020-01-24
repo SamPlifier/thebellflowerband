@@ -1,10 +1,15 @@
+import Head from 'next/head';
 import StyleBase from '../components/StyleBase';
 import merchandise from '../public/merchInfo.js';
+
 const Merch = () => {
     const merchItems = merchandise;
     console.log(merchItems);
     return (
         <StyleBase>
+            <Head>
+                <title>Merchandise</title>
+            </Head>
             <section>
                 <h2>ITEMS</h2>
                 <div className="merchContainer">

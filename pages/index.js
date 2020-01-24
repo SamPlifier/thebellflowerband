@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import StyleBase from '../components/StyleBase';
 import Cta from '../components/Cta';
 import Logo from '../components/Logo';
@@ -5,7 +6,11 @@ import Logo from '../components/Logo';
 const Home = () => {
   return (
     <StyleBase>
+      <Head>
+        <title>Home</title>
+      </Head>
       <section>
+        
         <Logo />
         <p>a six piece original rock band from<br/>Chapel Hill, NC.</p>
         <Cta type="link" className="album" goTo="/albums" text="HEAR OUR ALBUM" />
