@@ -11,13 +11,39 @@ const Media = () => {
             setPosterNum(posterNum + 1);
         }
     }
-
+    
     return (
         <StyleBase>
             <Head>
                 <title>Media</title>
             </Head>
             <section>
+                <h2>AUDIO</h2>
+                <div className="audioContainer">
+                    <p>Changes On The Way</p>
+                    <div className="audio">
+                        <audio src={'/audio/ChangesOnTheWay.mp3'} controls></audio>
+                    </div>
+                </div>
+                <div className="audioContainer">
+                    <p>What Is Love</p>
+                    <div className="audio">
+                        <audio src={'/audio/WhatIsLove.mp3'} controls></audio>
+                    </div>
+                </div>
+                <div className="audioContainer">
+                    <p>Blowing The Wind</p>
+                    <div className="audio">
+                        <audio src={'/audio/BlowingTheWind.mp3'} controls></audio>
+                    </div>
+                </div>
+                <div className="audioContainer">
+                    <p>Looking For The One</p>
+                    <div className="audio">
+                        <audio src={'/audio/LookingForTheOne.mp3'} controls></audio>
+                    </div>
+                </div>
+
                 <h2>VIDEO</h2>
                 <p>SPARKcon Music Festival</p>
                 <div className="videoContainer">
@@ -98,10 +124,19 @@ const Media = () => {
                             color: #222;
                             z-index: 1;
                         }
+                        .audioContainer {
+                            border-bottom: 2px solid #f89e00;
+                            margin-bottom: 2rem;
+                        }
+                        .audio {
+                            display: flex;
+                            justify-content: center;
+                            background: #f1f3f4;
+                            filter: invert(100%);
+                            opacity: .7;
+                        }
                         audio {
                             width: 100%;
-                            border-radius: 30px;
-                            border: 2px solid #f69d1a;
                         }
                         .poster {
                             width: 100%;
