@@ -114,7 +114,7 @@ class Calendar extends React.Component {
                             display: flex;
                             align-items: baseline;
                             width: 100%;
-                            word-break: break word;
+                            word-break: break-word;
                         }
                         .time {
                             margin-left: 10px;

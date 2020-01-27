@@ -22,14 +22,14 @@ const Home = () => {
         grid-template-areas: "logo logo" 
                              "description description"
                              "album album";
-        grid-template-rows: 25% 25% 50%;
+        grid-template-rows: 45% 10% 45%;
         grid-template-columns: 50% 50%;
       }
       p {
         grid-area: description;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
       }
       .album {
         grid-area: album;

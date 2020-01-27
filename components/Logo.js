@@ -5,7 +5,7 @@ export default () => <div className="logo">
       grid-area: logo;
       display: flex;
       justify-content: center;
-      align-items: flex-end;
+      align-items: center;
     }
     .logo img {
       width: 80%;
