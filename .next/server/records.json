@@ -27,16 +27,16 @@
   },
   "chunks": {
     "byName": {
-      "static/boNbQW4hC0ksYAFOa2KCB/pages/_app.js": 0,
-      "static/boNbQW4hC0ksYAFOa2KCB/pages/_document.js": 1,
-      "static/boNbQW4hC0ksYAFOa2KCB/pages/_error.js": 2,
-      "static/boNbQW4hC0ksYAFOa2KCB/pages/about.js": 3,
-      "static/boNbQW4hC0ksYAFOa2KCB/pages/album/[albumName].js": 4,
-      "static/boNbQW4hC0ksYAFOa2KCB/pages/albums.js": 5,
-      "static/boNbQW4hC0ksYAFOa2KCB/pages/calendar.js": 6,
-      "static/boNbQW4hC0ksYAFOa2KCB/pages/index.js": 7,
-      "static/boNbQW4hC0ksYAFOa2KCB/pages/media.js": 8,
-      "static/boNbQW4hC0ksYAFOa2KCB/pages/merchandise.js": 9
+      "static/7P8f38ZaMt6Af940tP7od/pages/_app.js": 0,
+      "static/7P8f38ZaMt6Af940tP7od/pages/_document.js": 1,
+      "static/7P8f38ZaMt6Af940tP7od/pages/_error.js": 2,
+      "static/7P8f38ZaMt6Af940tP7od/pages/about.js": 3,
+      "static/7P8f38ZaMt6Af940tP7od/pages/album/[albumName].js": 4,
+      "static/7P8f38ZaMt6Af940tP7od/pages/albums.js": 5,
+      "static/7P8f38ZaMt6Af940tP7od/pages/calendar.js": 6,
+      "static/7P8f38ZaMt6Af940tP7od/pages/index.js": 7,
+      "static/7P8f38ZaMt6Af940tP7od/pages/media.js": 8,
+      "static/7P8f38ZaMt6Af940tP7od/pages/merchandise.js": 9
     },
     "bySource": {},
     "usedIds": [

@@ -71,7 +71,7 @@ const Media = () => {
                         iframe {
                             width: calc(100vw - 2.1rem);
                             height: calc(56.25vw - 2.1rem);
-                            border: 2px solid #f69d1a;
+                            border-bottom: 2px solid #f69d1a;
                             display: -webkit-box;
                             display: -ms-flexbox;
                             display: flex;
@@ -101,11 +101,6 @@ const Media = () => {
                             position: relative;
                             width: calc(100vw - 2rem);
                             height: calc(56.25vw - 2rem);
-                        }
-                        @media only screen and (min-width:500px) {
-                            .videoContainer {
-                                width: calc(100vw - 6rem);
-                            }
                         }
                         .loading {
                             display: -webkit-box;
@@ -149,6 +144,9 @@ const Media = () => {
                             .loading {
                                 left: 0;
                                 top: 0;
+                            }
+                            .videoContainer {
+                                width: calc(100vw - 6rem);
                             }
                         }
                     `}</style>

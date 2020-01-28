@@ -395,14 +395,14 @@ module.exports = "/_next/static/images/david-6909bcf717f68ee28d953ef6ded043a3.pn
 
 /***/ }),
 
-/***/ "./public/members/franklin1.png":
-/*!**************************************!*\
-  !*** ./public/members/franklin1.png ***!
-  \**************************************/
+/***/ "./public/members/franklin.png":
+/*!*************************************!*\
+  !*** ./public/members/franklin.png ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/franklin1-8e8405fc9c62de0a62a074a7e65dc7f3.png";
+module.exports = "/_next/static/images/franklin-16cec7484e0c66d99d876e3c9a9553a5.png";
 
 /***/ }),
 
@@ -417,14 +417,14 @@ module.exports = "/_next/static/images/jeff-e57fdb11734a832f25fafe5a343cb8c2.png
 
 /***/ }),
 
-/***/ "./public/members/natasha.png":
-/*!************************************!*\
-  !*** ./public/members/natasha.png ***!
-  \************************************/
+/***/ "./public/members/natasha1.png":
+/*!*************************************!*\
+  !*** ./public/members/natasha1.png ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/natasha-c5733a23da50a9b077d2b1ad45c143b1.png";
+module.exports = "/_next/static/images/natasha1-c5733a23da50a9b077d2b1ad45c143b1.png";
 
 /***/ }),
 
@@ -452,13 +452,13 @@ const cindyPhoto = __webpack_require__(/*! ../public/members/cindy.png */ "./pub
 
 const samPhoto = __webpack_require__(/*! ../public/members/sam1.png */ "./public/members/sam1.png");
 
-const natashaPhoto = __webpack_require__(/*! ../public/members/natasha.png */ "./public/members/natasha.png");
+const natashaPhoto = __webpack_require__(/*! ../public/members/natasha1.png */ "./public/members/natasha1.png");
 
 const jeffPhoto = __webpack_require__(/*! ../public/members/jeff.png */ "./public/members/jeff.png");
 
 const davidPhoto = __webpack_require__(/*! ../public/members/david.png */ "./public/members/david.png");
 
-const franklinPhoto = __webpack_require__(/*! ../public/members/franklin1.png */ "./public/members/franklin1.png");
+const franklinPhoto = __webpack_require__(/*! ../public/members/franklin.png */ "./public/members/franklin.png");
 
 const instruments = [{
   musician: 'Franklin Bellflower',
