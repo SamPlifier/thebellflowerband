@@ -112,7 +112,7 @@ const Media = () => {
                             -webkit-box-align: center;
                                 -ms-flex-align: center;
                                     align-items: center;
-                            width: calc(100vw - 2rem);
+                            width: calc(100vw - 2.2rem);
                             height: calc(56.25vw - 2rem);
                             position: absolute;
                             background: #f69d1a;
