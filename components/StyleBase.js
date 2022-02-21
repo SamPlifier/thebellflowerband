@@ -42,6 +42,7 @@ const StyleBase = (props) => {
                 }
                 a {
                     text-decoration: none;
+                    transition: all .5s;
                 }
 
                 section {
@@ -53,10 +54,6 @@ const StyleBase = (props) => {
                     section {
                         padding: 1rem 6rem;
                     }
-                }
-
-                .map {
-                    background: 
                 }
 
             `}</style>

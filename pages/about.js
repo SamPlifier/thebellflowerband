@@ -55,8 +55,14 @@ const About = () => {
                 margin: 2rem 0;
                 box-shadow: 0px 2px 0px 0px #f89e00;
             }
+            .bandMemberCard img {
+                transition: all 2s ease;
+            }
             .bandMemberCard:hover {
                 cursor: pointer;
+            }
+            .bandMemberCard:hover img {
+                transform: rotateY(180deg);
             }
             .bandMemberCard h2 {
                 color: #f69d1a;

@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Navigation = (props) => {
     return (
         <nav onClick={props.toggleMenu} tabIndex="0">
-            <Link href="/"><a title="About Page"><span className="menu-link home">HOME</span></a></Link>
+            <Link href="/"><a title="Home Page"><span className="menu-link home">HOME</span></a></Link>
             <Link href="/about"><a title="About Page"><span className="menu-link about">ABOUT</span></a></Link>
             <Link href="/albums"><a title="Albums Page"><span className="menu-link albums">ALBUMS</span></a></Link>
             <Link href="/calendar"><a title="Calendar Page"><span className="menu-link calendar">CALENDAR</span></a></Link>

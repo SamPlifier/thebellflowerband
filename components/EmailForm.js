@@ -142,11 +142,17 @@ const EmailForm2 = () => {
                   resize: vertical;
                 }
                 button {
-                  color: #fff;
-                  margin-top: 2rem;
-                  background: #d81e5b;
-                  padding: 1rem 1.5rem;
-                  border: 2px solid #fff;
+                    color: #fff;
+                    background: #d81e5b;
+                    padding: 1rem 1.5rem;
+                    border: 2px solid #fff;
+                    text-align: center;
+                    transition: 1s all ease;
+                    margin-top: 30px;
+                }
+                button:hover {
+                    background: #f69d1a;
+                    color: #333;
                 }
             `}</style>
         </div>

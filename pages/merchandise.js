@@ -27,7 +27,7 @@ const Merch = () => {
                     })}
                 </div>
                 <h2>PURCHASING</h2>
-                <p>We currently accept <span>Credit Cards</span>, <span>Venmo</span>, and <span>Paypal</span>. Contact us below if you have any questions about stock or payment details.</p>
+                <p>These items are only available at shows at the moment. We currently accept <span>Credit Cards</span>, <span>Venmo</span>, and <span>Paypal</span>. Contact us below if you have any questions about stock or payment details.</p>
 
             </section>
             <style jsx>{`

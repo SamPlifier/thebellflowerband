@@ -1,1 +1,7 @@
-{"/_app":"static/e0tZsxXcPcGCyda6K6UmB/pages/_app.js","/_document":"static/e0tZsxXcPcGCyda6K6UmB/pages/_document.js","/_error":"static/e0tZsxXcPcGCyda6K6UmB/pages/_error.js","/about":"static/e0tZsxXcPcGCyda6K6UmB/pages/about.html","/album/[albumName]":"static/e0tZsxXcPcGCyda6K6UmB/pages/album/[albumName].html","/albums":"static/e0tZsxXcPcGCyda6K6UmB/pages/albums.html","/calendar":"static/e0tZsxXcPcGCyda6K6UmB/pages/calendar.html","/index":"static/e0tZsxXcPcGCyda6K6UmB/pages/index.html","/media":"static/e0tZsxXcPcGCyda6K6UmB/pages/media.html","/merchandise":"static/e0tZsxXcPcGCyda6K6UmB/pages/merchandise.html","/":"static/e0tZsxXcPcGCyda6K6UmB/pages/index.html"}
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/merchandise": "pages/merchandise.js",
+  "/": "pages/index.js"
+}

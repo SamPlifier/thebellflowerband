@@ -51,6 +51,24 @@ const Header = () => {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                transition: all 1s ease;
+            }
+            .navMenu:hover {
+                cursor: pointer;
+            }
+            .navMenu:hover, .navMenu:active, .navMenu:focus-visible {
+                background: #f69d1a;
+            }
+            .navMenu:hover .line--1,
+            .navMenu:hover .line--2,
+            .navMenu:hover .line--3,
+            .navMenu:active .line--1,
+            .navMenu:active .line--2,
+            .navMenu:active .line--3,
+            .navMenu:focus-visible .line--1,
+            .navMenu:focus-visible .line--2,
+            .navMenu:focus-visible .line--3 {
+                background: #fff;
             }
             .line--1, .line--2, .line--3 {
                 width: 60%;

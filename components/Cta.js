@@ -6,7 +6,12 @@ const CtaStyle = `
     padding: 1rem 1.5rem;
     border: 2px solid #fff;
     text-align: center;
+    transition: 1s all ease;
 `;
+const CtaHoverStyle = `
+    background: #f69d1a;
+    color: #333;
+`
 
 const Cta = (props) => {
     if (props.type === 'link') {
@@ -16,6 +21,9 @@ const Cta = (props) => {
                 <style jsx>{`
                     a {
                         ${CtaStyle}
+                    }
+                    a:hover, a:focus-visible {
+                        ${CtaHoverStyle}
                     }
                     [data-link-to="/albums"] {
                         grid-area: album;

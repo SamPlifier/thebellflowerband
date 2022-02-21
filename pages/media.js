@@ -45,23 +45,28 @@ const Media = () => {
                 </div>
 
                 <h2>VIDEO</h2>
+                <p>I'll Show Up Tonight</p>
+                <div className="videoContainer">
+                    <div className="loading">Loading</div>
+                    <div><iframe src="https://www.youtube.com/embed/K9ap2fFgkvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
                 <p>SPARKcon Music Festival</p>
                 <div className="videoContainer">
                     <div className="loading">Loading</div>
-                    <div><iframe src="https://www.youtube.com/embed/Ofv5mz3Jvak" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
+                    <div><iframe src="https://www.youtube.com/embed/Ofv5mz3Jvak" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
                 </div>
                 <p>Carrboro Music Festival</p>
                 <div className="videoContainer">
                     <div className="loading">Loading</div>
-                    <iframe src="https://www.youtube.com/embed/M_JR38PYAgs" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/M_JR38PYAgs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <p>WHUP Radio</p>
                 <div className="videoContainer">
                     <div className="loading">Loading</div>
-                    <iframe src="https://www.youtube.com/embed/Ojt7JEuhWyM" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/Ojt7JEuhWyM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <h2>POSTERS</h2>
-                <img className="poster" onClick={() => {posterCycle(posterNum)}} src={require(`../public/bellflowerPoster${posterNum}.jpg`)} />
+                
                 <style jsx>{`
                     /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 

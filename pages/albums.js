@@ -19,7 +19,7 @@ const Albums = () => {
                             <Link href="/album/[albumName]" as={`/album/${album.urlName}`}>
                                 <div>
                                     <div className="albumImgContainer">
-                                    <img alt={`Front cover of Bellflower album ${album.name}`} src={require(`../public/albums/${album.urlName}/album-front.png`)}/>
+                                    <img alt={`Front cover of Bellflower album ${album.name}`} src={require(`../public/albums/${urlName}/album-front.png`)}/>
                                 </div> 
                                 </div>
                             </Link>
