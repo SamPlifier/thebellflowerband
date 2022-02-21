@@ -2178,7 +2178,7 @@ const Albums = () => {
       className: "jsx-1270321536" + " " + "albumImgContainer"
     }, __jsx("img", {
       alt: `Front cover of Bellflower album ${album.name}`,
-      src: __webpack_require__("po3c")(`./${urlName}/album-front.png`),
+      src: __webpack_require__("po3c")(`./${album.urlName}/album-front.png`),
       className: "jsx-1270321536"
     })))), __jsx(_components_AlbumVendors__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
       vendor: album.vendors
