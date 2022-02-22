@@ -1,7 +1,9 @@
 import bandMembers from '../public/musicians.js';
+import Image from 'next/image';
 
 const BandMember = (props) => {
     const person = props.viewPerson;
+    console.log(props)
     
     if (typeof props.viewPerson === 'number') {
         return (
@@ -9,7 +11,7 @@ const BandMember = (props) => {
                 <div className="individual__container">
                 <button onClick={props.close} className="close">&#10005;</button>
                 <h2>{bandMembers[person].musician}</h2>
-                <img src={bandMembers[person].photo}/>
+                <Image className="member-photo" src={`/${bandMembers[person].photo}`} width="600" height="400"/>
                 <p>{bandMembers[person].description}</p>
                 </div>
                 <style jsx>{`

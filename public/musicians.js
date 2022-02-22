@@ -1,9 +1,9 @@
 
-const franklinPhoto = require('../public/members/franklin.png');
-const natashaPhoto = require('../public/members/natasha1.png');
-const davidPhoto = require('../public/members/david.png');
-const jeffPhoto = require('../public/members/jeff.png');
-const samPhoto = require('../public/members/sam1.png');
+const franklinPhoto = '../public/bellflower-group.jpg';
+const natashaPhoto = '../public/bellflower-group.jpg';
+const davidPhoto = '../public/bellflower-group.jpg';
+const jeffPhoto = '../public/bellflower-group.jpg';
+const samPhoto = '../public/show-up-band.png';
 const instruments = [
     {
         musician: 'Franklin Bellflower',

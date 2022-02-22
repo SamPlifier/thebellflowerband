@@ -19,9 +19,9 @@ const Navigation = (props) => {
                     display: grid;
                     grid-template-areas: "1" 
                                          "2"
-                                         "3";
-                                         "4";
-                                         "5";
+                                         "3"
+                                         "4"
+                                         "5"
                                          "6";
                     grid-template-rows: 1fr.....;
                     grid-template-columns: 1fr;

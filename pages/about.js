@@ -3,18 +3,23 @@ import StyleBase from '../components/StyleBase';
 import { useState } from 'react';
 import bandMembers from '../public/musicians.js';
 import BandMember from '../components/BandMember';
+import Image from 'next/image';
+const bandPhoto = '../public/show-up-band.png';
 
 const About = () => {
     const [bandMember, setBandMember] = useState(false);
     const viewBandMember = (bandMember) => {
         typeof bandMember === 'number' ? setBandMember(bandMember) : setBandMember(false);
     }
-    const bandPhoto = require('../public/bellflower-group.jpg');
     return (
         <StyleBase>
             <section>
             <h2>ABOUT THE BAND</h2>
-            <div className="orangeBackground"><div className="bandPourHouse"></div></div>
+            <div className="orangeBackground">
+                <div className="band-photo">
+                <Image className="show-up-tonight" src={`/${bandPhoto}`} width="1400" height="500"/>    
+                </div>
+            </div>
             <p className="aboutBand">Bellflower plays original rock music in and around Chapel Hill and the Triangle, North Carolina, centering on the soaring voice of Natasha Wilson. The group originated with the songwriting collaboration of Natasha and guitarist Franklin Bellflower, whose solid rhythm and melodic lead playing are a key element of the music. Drummer Jeff Lindsey and percussionist Cindy Jones provide nuanced rhythmic propulsion, while multi-instrumentalist Sam Davis-Castro adds a vast sonic palette that takes the music to another level. Bassist &amp; songwriter David Criswell holds down the bottom and offers new material for the band to explore.</p>
             <h2>ABOUT THE INDIVIDUALS</h2>
             <p>Click on a band member for details like experience, influences, or something random.</p>
@@ -41,14 +46,10 @@ const About = () => {
             }
             .orangeBackground {
                 background: #f69d1a;
-            }
-            .bandPourHouse {
-                height: calc(50vw - 2rem);
-                background: url(${bandPhoto});
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                opacity: 0.5;
+            } 
+            .band-photo {
+                opacity: 0.8;
+                display: flex;
             }
             .bandMemberCard {
                 padding: 2rem;

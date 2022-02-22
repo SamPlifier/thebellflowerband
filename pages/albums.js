@@ -3,6 +3,7 @@ import StyleBase from '../components/StyleBase';
 import albumInfo from '../public/albumInfo.js';
 import AlbumVendors from '../components/AlbumVendors';
 import Link from 'next/link';
+import DynamicImage from '../components/DynamicImage';
 
 const Albums = () => {
     return (
@@ -12,6 +13,7 @@ const Albums = () => {
             </Head>
             <section>
                 {albumInfo.map((album) => {
+                    let imageUrl = `../${album.albumImages}/album-front.png`;
                     return (
                         <div key={album.name} className="album">
                             <h2>{album.name}</h2>
@@ -19,7 +21,9 @@ const Albums = () => {
                             <Link href="/album/[albumName]" as={`/album/${album.urlName}`}>
                                 <div>
                                     <div className="albumImgContainer">
-                                    <img alt={`Front cover of Bellflower album ${album.name}`} src={require(`../public/albums/${album.urlName}/album-front.png`)}/>
+                                        {console.log(`../${album.albumImages}/album-front.png`)}
+                                    {/* <img alt={`Front cover of Bellflower album ${album.name}`} src={require(imageUrl)}/> */}
+                                    <Image alt={`Front cover of Bellflower album ${album.name}`} folder={album.imageFolder} file={'album-front.png'}/>
                                 </div> 
                                 </div>
                             </Link>

@@ -3,7 +3,7 @@ const albums = [
         "item": "Bellflower album",
         "name": "Changes On The Way",
         "urlName": "changes-on-the-way",
-        "albumImages": "public/changes-on-the-way",
+        "imageFolder": "/albums/changes-on-the-way",
         "releaseDate":"September 30, 2019",
         "writers":["Franklin Bellflower", "Natasha Wilson", "David Criswell"],
         "songs":"10",

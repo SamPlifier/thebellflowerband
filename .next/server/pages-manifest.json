@@ -1,12 +1,6 @@
 {
   "/_app": "pages/_app.js",
-  "/about": "pages/about.js",
-  "/album/[albumName]": "pages/album/[albumName].js",
-  "/albums": "pages/albums.js",
-  "/calendar": "pages/calendar.js",
-  "/": "pages/index.js",
-  "/media": "pages/media.js",
-  "/merchandise": "pages/merchandise.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js"
+  "/_document": "pages/_document.js",
+  "/about": "pages/about.js"
 }

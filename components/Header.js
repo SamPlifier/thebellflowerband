@@ -41,6 +41,7 @@ const Header = () => {
                 z-index: 10;
                 position: fixed;
                 top: 0;
+                border-bottom: 2px solid #f29a2f;
             }
             .navMenu {
                 grid-column-start: 1;

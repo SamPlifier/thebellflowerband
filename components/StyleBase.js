@@ -52,7 +52,7 @@ const StyleBase = (props) => {
 
                 @media only screen and (min-width:500px) {
                     section {
-                        padding: 1rem 6rem;
+                        padding: 1rem 2rem;
                     }
                 }
 
