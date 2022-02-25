@@ -1,14 +1,13 @@
 import StyleBase from '../components/StyleBase';
 import EmailForm from './EmailForm';
-import Map from '../components/Map';
 
 const Footer = () => {
     
     return (
         <StyleBase>
             <section className="footer">
+                <hr className="white"/>
                 <EmailForm />
-                {/* <Map/> */}
                 <div className="socialIcons">
                     <a alt="bellflower youtube" href="https://www.youtube.com/channel/UCMt7r35vGbqSH_xX2iglYFA?view_as=subscriber"><img src={require('../public/social_icons/youtube.svg')} /></a>
                     <a alt="bellflower facebook" href="https://www.facebook.com/Bellflowermusic/"><img src={require('../public/social_icons/facebook.svg')} /></a>
@@ -16,12 +15,6 @@ const Footer = () => {
                 </div>
             </section>
         <style jsx>{`
-        .page-layout {
-            margin-top: 0;
-        }
-        .footer {
-            border-top: 2px solid #fff;
-        }
         .socialIcons {
             margin: 1rem 0;
             display: flex;
@@ -35,11 +28,17 @@ const Footer = () => {
             height: 300px;
             width: 100%;
           }
-          .socialIcons {
-              filter: invert(100%);
-              height: 50px;
-              margin-top: 2rem;
-          }
+        .socialIcons {
+            filter: invert(100%);
+            height: 50px;
+            margin-top: 2rem;
+        }
+        hr.white {
+          position: absolute;
+          width: 100%;
+          left: 0;
+          margin: 0;
+        }
         `}</style>
         </StyleBase>
     )

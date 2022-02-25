@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import StyleBase from '../components/StyleBase';
 import merchandise from '../public/merchInfo.js';
+import Image from 'next/image';
 
 const Merch = () => {
     const merchItems = merchandise;
-    console.log(merchItems);
     return (
         <StyleBase>
             <Head>
@@ -17,17 +17,16 @@ const Merch = () => {
                         return (
                             <div key={i} className="merchItem">
                                     <div className="description">
-                                        <p>Item: {item.name}</p>
-                                        <p>Price: &#36;{item.price}</p>
-                                        <p>Get at: {item.availableAt}</p>
-                                        <div className="imgContainer"><img src={item.imgSrc}/></div>
+                                        <p>{item.name}</p>
+                                        <p>&#36;{item.price}</p>
+                                        <Image className="imgContainer" src={`/${item.imgSrc}`} width="300" height="300"/>    
                                     </div>
                             </div>
                         )
                     })}
                 </div>
                 <h2>PURCHASING</h2>
-                <p>These items are only available at shows at the moment. We currently accept <span>Credit Cards</span>, <span>Venmo</span>, and <span>Paypal</span>. Contact us below if you have any questions about stock or payment details.</p>
+                <p>Besides the album, items are only available at shows at the moment. We currently accept <span>Credit Cards</span>, <span>Venmo</span>, and <span>Paypal</span>. Contact us below if you have any questions about stock or payment details.</p>
 
             </section>
             <style jsx>{`
@@ -37,28 +36,25 @@ const Merch = () => {
                 align-items: center;
             }
             span {
-                color: #f69d1a;
+                color: var(--main-orange);
             }
             .merchContainer {
-                display: flex;
-                flex-direction: column;
+                display: inline-flex;
                 justify-content: center;
+                flex-wrap: wrap;
             }
             .merchItem {
-                border: 2px solid #f69d1a;
-                padding: 2rem;
-                margin: 2rem 0;
+                border-bottom: 2px solid var(--main-orange);
+                padding: 1rem;
+                margin: 1rem;
+                width: 50%;
             }
-            .merchItem .imgContainer {
-                height: auto;
+            @media (min-width: 768px) {
+                .merchItem {
+                    width: calc((100% / 3) - 4rem);
+                }
             }
-            .merchItem .imgContainer img {
-                width: 70%;
-                object-fit: contain;
-            }
-            .description p {
-                text-align: left;
-            }
+
             `}</style>
         </StyleBase>
     )

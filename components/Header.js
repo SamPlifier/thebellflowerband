@@ -21,6 +21,7 @@ const Header = () => {
     }
     return (
     <div className="header">
+        <hr className="orange"/>
         <div className="navMenu" tabIndex="0" data-status={menuStatus} onClick={toggleMenu}>
             <div className="line--1"></div>
             <div className="line--2"></div>
@@ -33,7 +34,6 @@ const Header = () => {
         {menuOpen && <Navigation toggleMenu={toggleMenu}/>}
         <style jsx>{`
             .header {
-                width: 100%;
                 display: grid;
                 grid-template-rows: 50px;
                 grid-template-columns: 50px auto;
@@ -41,7 +41,9 @@ const Header = () => {
                 z-index: 10;
                 position: fixed;
                 top: 0;
-                border-bottom: 2px solid #f29a2f;
+                left: 50%;
+                transform: translateX(-50%);
+                max-width: 1000px;
             }
             .navMenu {
                 grid-column-start: 1;
@@ -53,12 +55,13 @@ const Header = () => {
                 justify-content: center;
                 align-items: center;
                 transition: all 1s ease;
+                width: 50px;
             }
             .navMenu:hover {
                 cursor: pointer;
             }
             .navMenu:hover, .navMenu:active, .navMenu:focus-visible {
-                background: #f69d1a;
+                background: var(--main-orange);
             }
             .navMenu:hover .line--1,
             .navMenu:hover .line--2,
@@ -72,9 +75,9 @@ const Header = () => {
                 background: #fff;
             }
             .line--1, .line--2, .line--3 {
-                width: 60%;
+                width: 30px;
                 height: 2px;
-                background: #f69d1a;
+                background: var(--main-orange);
             }
             [data-status="open"] .line--1,
             [data-status="open"] .line--3 {
@@ -107,8 +110,9 @@ const Header = () => {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 0 1rem;
                 height: 50px;
+                padding-right: 10px;
+                // margin: 0 20px 0 30px;
             }
             .siteUrl {
                 grid-column-start: 2;
@@ -119,7 +123,17 @@ const Header = () => {
                 color: #fff;
             }
             .siteUrl .highlight {
-                color: #f69d1a;
+                color: var(--main-orange);
+            }
+            hr.orange {
+                position: absolute;
+                border-color: var(--main-orange);
+                width: 100vw;
+                left: 0;
+                bottom: 0;
+                margin: 0;
+                left: 50%;
+                transform: translateX(-50%);
             }
         `}
         </style>

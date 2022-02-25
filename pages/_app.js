@@ -4,7 +4,6 @@ import Header from '../components/Header';
 import StyleBase from '../components/StyleBase';
 import Footer from '../components/Footer';
 import Head from 'next/head';
-// import icon from '../public/bellflower-icon.png';
 
 class BellflowerApp extends App {
     render() {
@@ -18,7 +17,7 @@ class BellflowerApp extends App {
                           key="viewport"
                         />
                         
-                        {/* <link rel="shortcut icon" type="icon" href={'../public/bellflower-icon.png'} /> */}
+                        <link rel="shortcut icon" type="icon" href={'/icon.png'} />
                     </Head>
                     <Header />
                     <Component {...pageProps} />

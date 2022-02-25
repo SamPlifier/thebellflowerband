@@ -1,6 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+const CtaStyle = `
+    color: #fff;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    position: relative;
+    background-image: linear-gradient(45deg, #d81e5b 10%, var(--main-orange));
+    z-index: 1;
+    font-weight: 400;
+    border: none;
+`;
+const CtaBeforeStyle = `
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(45deg, #9c27b0 50%, #d81e5b);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+`
+const CtaHoverBeforeStyle = `
+    opacity: 1;
+`
+
 const EmailForm2 = () => {
     const [serverState, setServerState] = useState({
         sending: false,
@@ -88,7 +114,7 @@ const EmailForm2 = () => {
             });
     };
     return (
-        <div>
+        <div className="formContainer">
             <h2>GET IN TOUCH</h2>
             <form onSubmit={handleFormSubmit} noValidate>
             {serverState.status && (
@@ -122,6 +148,9 @@ const EmailForm2 = () => {
                 >SEND</button>
             </form>
             <style jsx>{`
+                .formContainer {
+                    padding-top: .2rem;
+                }
                 form {
                   display: flex;
                   flex-direction: column;
@@ -142,17 +171,14 @@ const EmailForm2 = () => {
                   resize: vertical;
                 }
                 button {
-                    color: #fff;
-                    background: #d81e5b;
-                    padding: 1rem 1.5rem;
-                    border: 2px solid #fff;
-                    text-align: center;
-                    transition: 1s all ease;
-                    margin-top: 30px;
+                    ${CtaStyle}
+                    margin-top: 2rem;
                 }
-                button:hover {
-                    background: #f69d1a;
-                    color: #333;
+                button::before {
+                    ${CtaBeforeStyle}
+                }
+                button:hover::before {
+                    ${CtaHoverBeforeStyle}
                 }
             `}</style>
         </div>

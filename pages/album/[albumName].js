@@ -23,9 +23,8 @@ const Album = () => {
                             }
                         })}</span>
                         </p>
-                        <p className="detail">Song Number<br/><span>{album.songs}</span></p>
-                        <div className="detail">Song Names<br/><span>{album.songNames.map((song, k) => {
-                            return <div key={k}><span>{song}</span><br/></div>
+                        <div className="detail">Tracks<br/><span>{album.songs.map((song, k) => {
+                            return <div key={k}><span>{k + 1}. {song}</span><br/></div>
                         })}</span></div>
                         <h2>ART</h2>
                         <ViewAlbumSides album={album.name.toLowerCase().split(' ').join('-')}/>
@@ -37,13 +36,7 @@ const Album = () => {
             <style jsx>{`
 
             .album-vendors {
-                display: grid;
-                grid-template-areas: "iTunes googlePlay"
-                             "amazonPrime cdBaby";
-                grid-template-rows: "3rem 3rem";
-                grid-template-columns: "50% 50%";
-                grid-row-gap: 2rem;
-                margin: 2rem 0;
+                // margin: 2rem 0;
             }
             .albums {
                 text-align: left;

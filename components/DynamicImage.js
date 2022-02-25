@@ -1,15 +1,17 @@
 import Image from 'next/image';
 
-const myLoader = ({ alt, folder, file }) => {
-  return `../public/${folder}/${file}`
+const myLoader = ({ location }) => {
+  return `../public/${location}`
 }
 
 const DynamicImage = (props) => {
+  console.log(props)
   return (
     <Image
-      loader={myLoader}
-      src={`${folder}${file}`}
-      alt={alt}
+      src={`${props.myLoader}`}
+      alt={props.alt}
+      width={props.width}
+      height={props.height}
     />
   )
 }

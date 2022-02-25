@@ -1,48 +1,46 @@
 const AlbumVendors = (props) => {
-    
     return (
         <div>
-        <h2>PURCHASE ON</h2>
-        <div className="vendors">
-            {props.vendor.map(vendor => {
-                return (
-                <a key={vendor.vendorName} className="vendor" href={vendor.vendorLink}>{vendor.vendorName}</a>
-                )
-            })}
-        <style jsx>{`
-        .vendors {
-            width: 100%;
-            display: grid;
-            grid-template-areas: "topLeft topRight"
-                         "bottomLeft bottomRight";
-            grid-template-rows: auto;
-            grid-template-columns: 1fr 1fr;
-            grid-row-gap: 2rem;
-            grid-column-gap: 2rem;
-            margin: 2rem 0;
-        }
-        .vendor {
-            border: 2px solid #fff;
-            padding: 1rem;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 2rem;
-            background: #f69d1a;
-            color: #222;
-            transition: background ease .5s;
-        }
-        .vendor:hover {
-            background: #fff;
-        }
-        `}</style>
-        <style jsx global>{`
-            .vendorAvail {
+            <h2>AVAILABLE ON</h2>
+            <div className="vendors">
+                {props.vendor.map(vendor => {
+                    return (
+                    <a key={vendor.vendorName} className="vendor" href={vendor.vendorLink}>{vendor.vendorName}</a>
+                    )
+                })}
+            <style jsx>
+            {`
+            .vendors {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin-bottom: 2rem;
+            }
+            .vendor {
                 text-align: center;
             }
-        `}</style>
-        </div>
+            .vendors a {
+                color: var(--main-orange);
+                font-family: 'BenchNine', sans-serif;
+                font-size: 4rem;
+                text-decoration: underline;
+                text-decoration-thickness: 2px;
+                text-decoration-color: #fff;
+                text-underline-offset: 2px;
+            }
+            @media (min-width: 768px) {
+                .vendors {
+                    flex-direction: row;
+                    align-items: center;
+                }
+                .vendors a:nth-child(2) {
+                    margin: 0 2rem;
+                }
+            }
+            `}
+            </style>
+            </div>
         </div>
     )
 }

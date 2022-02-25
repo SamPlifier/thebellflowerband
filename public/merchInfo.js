@@ -1,24 +1,21 @@
-import sticker from '../public/sticker.svg';
-import shirt1 from '../public/shirt1.svg';
-import albumChanges from '../public/albums/changes-on-the-way/album-front.png';
 const merchItems = [
     {
         name: "T-shirt",
         price: '20',
         availableAt: 'Performances.',
-        imgSrc: shirt1,
+        imgSrc: 'shirt1.svg'
     },
     {
         name: "Sticker",
         price: '0',
         availableAt: 'Performances.',
-        imgSrc: sticker,
+        imgSrc: 'sticker.svg'
     },
     {
         name: "Album (Changes On The Way)",
         price: '10',
         availableAt: 'Performances and online.',
-        imgSrc: albumChanges,
+        imgSrc: 'albums/changes-on-the-way/album-front.png'
     }
 ]
 export default merchItems;

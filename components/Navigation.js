@@ -12,7 +12,7 @@ const Navigation = (props) => {
             <style jsx>{`
                 nav {
                     height: calc(100vh - 50px);
-                    width: 100vw;
+                    max-width: 1200px;
                     position: absolute;
                     top: 50px;
                     background: #333;
@@ -62,11 +62,10 @@ const Navigation = (props) => {
                     justify-content: center;
                     color: #fff;
                     font-family: 'BenchNine',sans-serif;
-                    font-size: 2rem;
                 }
                 
                 a:hover {
-                    background: #dcdcd6;
+                    background: var(--main-orange);
                     color: #333;
                 }
             `}</style>

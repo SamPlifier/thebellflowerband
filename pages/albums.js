@@ -13,17 +13,14 @@ const Albums = () => {
             </Head>
             <section>
                 {albumInfo.map((album) => {
-                    let imageUrl = `../${album.albumImages}/album-front.png`;
                     return (
                         <div key={album.name} className="album">
                             <h2>{album.name}</h2>
-                            <p className="deets">click album for details</p>
                             <Link href="/album/[albumName]" as={`/album/${album.urlName}`}>
                                 <div>
                                     <div className="albumImgContainer">
-                                        {console.log(`../${album.albumImages}/album-front.png`)}
-                                    {/* <img alt={`Front cover of Bellflower album ${album.name}`} src={require(imageUrl)}/> */}
-                                    <Image alt={`Front cover of Bellflower album ${album.name}`} folder={album.imageFolder} file={'album-front.png'}/>
+                                    <p className="deets">click album for details</p>
+                                    <DynamicImage width="700" height="700" alt={`Front cover of Bellflower album ${album.name}`} myLoader={`${album.imageFolder}/album-front.png`} />
                                 </div> 
                                 </div>
                             </Link>
@@ -39,12 +36,29 @@ const Albums = () => {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                max-width: 600px;
+                margin: 0 auto;
+                position: relative;
             }
             .album img {
                 width: 100%;
             }
             .deets {
-                color: #f69d1a;
+                color: var(--main-orange);
+                position: absolute;
+                z-index: 4;
+                background: linear-gradient(#000000a6, black);
+                height: 100%;
+                width: 100%;
+                bottom: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .deets:hover {
+                cursor: pointer;
+                text-decoration: underline;
             }
             `}
             </style>

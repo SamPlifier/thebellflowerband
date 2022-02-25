@@ -12,27 +12,18 @@ const Home = () => {
       <section>
         
         <Logo />
-        <p>a six piece original rock band from<br/>Chapel Hill, NC.</p>
-        <Cta type="link" className="album" goTo="/albums" text="HEAR OUR ALBUM" />
+        <p>a five piece original rock band started in<br/>Chapel Hill, NC.</p>
+        <Cta type="link" className="album" goTo="/media" text="HEAR OUR ALBUM" />
       </section>
       <style jsx>{`
       section {
-        display: grid;
         height: calc(100vh - 52px);
-        grid-template-areas: "logo logo" 
-                             "description description"
-                             "album album";
-        grid-template-rows: 45% 10% 45%;
-        grid-template-columns: 50% 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
       p {
-        grid-area: description;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .album {
-        grid-area: album;
+        margin: 5rem 0 10rem;
       }
       `}</style>
     </StyleBase>

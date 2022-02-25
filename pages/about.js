@@ -17,20 +17,20 @@ const About = () => {
             <h2>ABOUT THE BAND</h2>
             <div className="orangeBackground">
                 <div className="band-photo">
-                <Image className="show-up-tonight" src={`/${bandPhoto}`} width="1400" height="500"/>    
+                {/* <Image className="show-up-tonight" src={`/${bandPhoto}`} width="1400" height="700"/> */}
+                <Image className="show-up-tonight" src={`/${bandPhoto}`} layout="fill" objectFit="cover" />
                 </div>
             </div>
-            <p className="aboutBand">Bellflower plays original rock music in and around Chapel Hill and the Triangle, North Carolina, centering on the soaring voice of Natasha Wilson. The group originated with the songwriting collaboration of Natasha and guitarist Franklin Bellflower, whose solid rhythm and melodic lead playing are a key element of the music. Drummer Jeff Lindsey and percussionist Cindy Jones provide nuanced rhythmic propulsion, while multi-instrumentalist Sam Davis-Castro adds a vast sonic palette that takes the music to another level. Bassist &amp; songwriter David Criswell holds down the bottom and offers new material for the band to explore.</p>
+            <p className="aboutBand">Bellflower plays original rock music around Triangle area of North Carolina, centering on the soaring and dynamic voice of Natasha Wilson. The group originated from the songwriting collaboration of Natasha and guitarist Franklin Bellflower, whose solid rhythm and melodic lead playing are a key element of the music. Drummer Jeff Lindsey provides nuanced rhythmic propulsion with great attention to the rise and fall within each song, while multi-instrumentalist Sam Davis-Castro weaves blankets of sound punctured by diverse solos. Bassist and songwriter David Criwsell expands the character palette of the group with artful flexibility, while maintaining the core energy signature of Bellflower.</p>
             <h2>ABOUT THE INDIVIDUALS</h2>
-            <p>Click on a band member for details like experience, influences, or something random.</p>
             <div className="individuals">
                 {bandMembers.map((member, i) => {
                     return (
-                        <div key={i} data-member={i} className="bandMemberCard" onClick={() => {viewBandMember(i)}}>
+                        <button key={i} data-member={i} className="bandMemberCard" onClick={() => {viewBandMember(i)}}>
                             <img src={member.svg} />
-                            <h2>{member.musician}</h2>
+                            <p className="person">{member.musician}</p>
                             <p>{member.instrument}</p>
-                        </div>
+                        </button>
                     )
                 })}
             </div>
@@ -39,48 +39,66 @@ const About = () => {
             .aboutBand {
                 text-align: justify;
             }
-            .aboutUsImg {
-                width: 100%;
-                height: calc(45vw - 2rem);
-                object-fit: cover;
-            }
+
             .orangeBackground {
-                background: #f69d1a;
+                background: var(--main-orange);
             } 
             .band-photo {
                 opacity: 0.8;
                 display: flex;
+                width: 100%!important;
+                height: 45vw;
+                position: relative;
+                
             }
             .bandMemberCard {
                 padding: 2rem;
-                margin: 2rem 0;
-                box-shadow: 0px 2px 0px 0px #f89e00;
-            }
-            .bandMemberCard img {
-                transition: all 2s ease;
+                margin: 2rem auto;
+                background: inherit;
+                border: none;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                color: #fff;
             }
             .bandMemberCard:hover {
                 cursor: pointer;
             }
+            .bandMemberCard img {
+                transition: 1s all ease;
+            }
             .bandMemberCard:hover img {
                 transform: rotateY(180deg);
             }
-            .bandMemberCard h2 {
-                color: #f69d1a;
+            .bandMemberCard .person {
+                margin: 2rem 0 0 0;
+                color: var(--main-orange);
+                font-family: 'BenchNine',sans-serif;
+                text-decoration: underline;
+                font-size: 4rem;
+                text-decoration-thickness: 2px;
+                text-decoration-color: #fff;
+                text-underline-offset: 2px;
             }
             .individuals img {
                 object-fit: contain;
                 height: 120px;
+                padding-top: 1rem;
             }
-            @media only screen and (min-width:700px) {
+            @media (min-width:768px) {
                 .individuals {
                     display: flex;
                     flex-wrap: wrap;
+                    justify-content: center;
                 }
                 .bandMemberCard {
-                    padding: 0;
-                    margin: 2rem;
-                    width: calc(50% - 4rem);
+                    width: calc(100% / 3);
+                    margin: 0;
+                }
+                .band-photo {
+                    height: 450px;
                 }
             }
             `}</style>

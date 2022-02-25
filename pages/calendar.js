@@ -153,7 +153,7 @@ class Calendar extends React.Component {
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            background: #f69d1a;
+                            background: var(--main-orange);
                             transition: background ease .5s;
                             margin: 1rem;
                         }

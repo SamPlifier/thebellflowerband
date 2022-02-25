@@ -14,7 +14,7 @@ const ViewAlbumSides = (props) => {
             <section>
                 <div className="album-container">
                 <img src=""/>
-                <img className="icon" src={require(`../public/albums/${album}/album-${inView}.png`)} />
+                <img className="icon" src={`/albums/${album}/album-${inView}.png`} />
                     <div className="album-controls">
                         <button className={`front ${inView === 'front' ? 'active' : ''}`} onClick={() => {updateInView('front')}}>Front Cover</button>
                         <button className={`back ${inView === 'back' ? 'active' : ''}`} onClick={() => {updateInView('back')}}>Back Cover</button>
@@ -30,23 +30,9 @@ const ViewAlbumSides = (props) => {
                              "left right";
                 grid-template-rows: "3rem 3rem";
                 grid-template-columns: "50% 50%";
-                grid-row-gap: 2rem;
-                grid-column-gap: 2rem;
+                grid-row-gap: 1rem;
+                grid-column-gap: 1rem;
                 margin: 2rem 0;
-            }
-            .album-controls button {
-                border: 2px solid #fff;
-                padding: 1rem;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: #f69d1a;
-                color: #222;
-                transition: background ease .5s;
-            }
-            .album-controls button.active {
-                background: #fff;
             }
             .front {
                 grid-area: front;
@@ -60,7 +46,6 @@ const ViewAlbumSides = (props) => {
             .right {
                 grid-area: right;
             }
-
             img {
                 width: 100%;
             }

@@ -3,7 +3,6 @@ import Image from 'next/image';
 
 const BandMember = (props) => {
     const person = props.viewPerson;
-    console.log(props)
     
     if (typeof props.viewPerson === 'number') {
         return (
@@ -11,8 +10,10 @@ const BandMember = (props) => {
                 <div className="individual__container">
                 <button onClick={props.close} className="close">&#10005;</button>
                 <h2>{bandMembers[person].musician}</h2>
-                <Image className="member-photo" src={`/${bandMembers[person].photo}`} width="600" height="400"/>
-                <p>{bandMembers[person].description}</p>
+                <div className="image-container">
+                <Image className="member-photo" id="image" src={`/${bandMembers[person].photo}`} layout="fill" objectFit="cover" />
+                </div>
+                <p className="description">{bandMembers[person].description}</p>
                 </div>
                 <style jsx>{`
                 .individual {
@@ -22,28 +23,44 @@ const BandMember = (props) => {
                     flex-direction: column;
                     justify-content: center;
                     position: fixed;
-                    left: 0;
+                    left: 50%;
                     top: 0;
-                    width: 100vw;
+                    transform: translateX(-50%);
+                    margin: 0 auto;
                     height: 100vh;
+                    width: 100vw;
                     z-index: 11;
                 }
                 .individual__container {
-                    background: linear-gradient(45deg,#ef447e,#f69d1a);
+                    background: linear-gradient(45deg,#ef447e,var(--main-orange));
+                    padding: 0 2rem;
+                    max-height: 100vh;
+                    max-width: 600px;
+                    overflow: scroll;
                 }
-                .individual__container img {
-                    width: calc(100% - 30px);
-                }
-                .individual__container p {
-                    margin: 30px 15px;
-                }
+                .individual__container button, .individual__container h2, .individual__container p {
+                    color: #333;
+                } 
                 .individual__container button {
                     margin-top: 30px;
                     background: unset;
                     border: unset;
                 }
+                .description {
+                    text-align: justify;
+                }
                 .individual__container button:hover {
                     cursor: pointer;
+                }
+                .image-container {
+                    opacity: .75;
+                    filter: grayscale(.8);
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    height: 350px;
+                    max-width: 400px;
+                    margin: 0 auto;
                 }
                 `}</style>
             </div>
