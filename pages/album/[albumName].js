@@ -1,7 +1,7 @@
 import StyleBase from '../../components/StyleBase';
 import ViewAlbumSides from '../../components/ViewAlbumSides';
-import AlbumVendors from '../../components/AlbumVendors';
 import albumInfo from '../../public/albumInfo.js';
+import AlbumVendors from '../../components/AlbumVendors';
 
 const Album = () => {
     return (

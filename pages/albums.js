@@ -2,8 +2,8 @@ import Head from 'next/head';
 import StyleBase from '../components/StyleBase';
 import albumInfo from '../public/albumInfo.js';
 import Cta from '../components/Cta';
-import AlbumVendors from '../components/AlbumVendors';
 import DynamicImage from '../components/DynamicImage';
+import AlbumVendors from '../components/AlbumVendors';
 
 const Albums = () => {
     return (
