@@ -112,7 +112,7 @@ const Header = () => {
                 align-items: center;
                 height: 50px;
                 padding-right: 10px;
-                // margin: 0 20px 0 30px;
+                padding-left: 10px;
             }
             .siteUrl {
                 grid-column-start: 2;
@@ -127,7 +127,9 @@ const Header = () => {
             }
             hr.orange {
                 position: absolute;
-                border-color: var(--main-orange);
+                border: none;
+                background: var(--main-orange);
+                height: 2px;
                 width: 100vw;
                 left: 0;
                 bottom: 0;

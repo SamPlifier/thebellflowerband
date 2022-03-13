@@ -11,7 +11,7 @@ const BandMember = (props) => {
                 <button onClick={props.close} className="close">&#10005;</button>
                 <h2>{bandMembers[person].musician}</h2>
                 <div className="image-container">
-                <Image className="member-photo" id="image" src={`/${bandMembers[person].photo}`} layout="fill" objectFit="cover" />
+                <Image className="member-photo" id="image" src={`/members/${bandMembers[person].photo}`} layout="fill" objectFit="cover" />
                 </div>
                 <p className="description">{bandMembers[person].description}</p>
                 </div>

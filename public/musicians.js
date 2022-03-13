@@ -1,9 +1,9 @@
 
-const franklinPhoto = '../public/members/franklin-original.png';
-const natashaPhoto = '../public/members/natasha-1.png';
-const davidPhoto = '../public/members/david-original.png';
-const jeffPhoto = '../public/members/jeff-original.png';
-const samPhoto = '../public/members/sam-1.png';
+const franklinPhoto = 'franklin-original.png';
+const natashaPhoto = 'natasha-1.png';
+const davidPhoto = 'david-original.png';
+const jeffPhoto = 'jeff-original.png';
+const samPhoto = 'members/sam-1.png';
 const instruments = [
     {
         musician: 'Franklin Bellflower',
