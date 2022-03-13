@@ -24,7 +24,7 @@ const Albums = () => {
                                     <DynamicImage width="700" height="700" alt={`Front cover of Bellflower album ${album.name}`} myLoader={`${album.imageFolder}/album-front.png`} />
                                 </div> 
                             </div>
-                            <AlbumVendors vendor={album.vendors}/>
+                            <AlbumVendors vendor={album.vendors} />
                         </div>
                     )
                 })}

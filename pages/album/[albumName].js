@@ -34,8 +34,8 @@ const Album = () => {
                                 </div>
                             </div>
                             <h2>ALBUM COVER</h2>
-                            <ViewAlbumSides album={album.name.toLowerCase().split(' ').join('-')}/>
-                            <AlbumVendors vendor={album.vendors}/>
+                            <ViewAlbumSides album={album.name.toLowerCase().split(' ').join('-')} />
+                            <AlbumVendors vendor={album.vendors} />
                         </div>
                     )
                 })}
