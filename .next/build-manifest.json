@@ -5,9 +5,9 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/L6cPTe_q4t8V-t4VU7s5H/_buildManifest.js",
-    "static/L6cPTe_q4t8V-t4VU7s5H/_ssgManifest.js",
-    "static/L6cPTe_q4t8V-t4VU7s5H/_middlewareManifest.js"
+    "static/_LRRfMDrSIwNCx_T4HYdp/_buildManifest.js",
+    "static/_LRRfMDrSIwNCx_T4HYdp/_ssgManifest.js",
+    "static/_LRRfMDrSIwNCx_T4HYdp/_middlewareManifest.js"
   ],
   "pages": {
     "/": [
@@ -40,14 +40,14 @@
       "static/chunks/framework-e70c6273bfe3f237.js",
       "static/chunks/main-01df828e572375b9.js",
       "static/chunks/675-a0e7bc4ebaaecba0.js",
-      "static/chunks/pages/album/[albumName]-ae798037bf1758ae.js"
+      "static/chunks/pages/album/[albumName]-c5b9ada4c5e75d9a.js"
     ],
     "/albums": [
       "static/chunks/webpack-9b312e20a4e32339.js",
       "static/chunks/framework-e70c6273bfe3f237.js",
       "static/chunks/main-01df828e572375b9.js",
       "static/chunks/675-a0e7bc4ebaaecba0.js",
-      "static/chunks/pages/albums-87e8a7dcf735c1e2.js"
+      "static/chunks/pages/albums-97d8193fd397d3fd.js"
     ],
     "/calendar": [
       "static/chunks/webpack-9b312e20a4e32339.js",
