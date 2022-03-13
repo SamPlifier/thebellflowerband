@@ -1,7 +1,7 @@
 import StyleBase from '../../components/StyleBase';
 import ViewAlbumSides from '../../components/ViewAlbumSides';
 import albumInfo from '../../public/albumInfo.js';
-import AlbumVendors from '../../components/AlbumVendors';
+import AlbumVendors2 from '../../components/AlbumVendors2';
 
 const Album = () => {
     return (
@@ -35,7 +35,7 @@ const Album = () => {
                             </div>
                             <h2>ALBUM COVER</h2>
                             <ViewAlbumSides album={album.name.toLowerCase().split(' ').join('-')} />
-                            <AlbumVendors vendor={album.vendors} />
+                            <AlbumVendors2 vendor={album.vendors} />
                         </div>
                     )
                 })}

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-const AlbumVendors = (props) => {
+const AlbumVendors2 = (props) => {
     return (
         <div>
             <h2>AVAILABLE ON</h2>
@@ -52,4 +52,4 @@ const AlbumVendors = (props) => {
     )
 }
 
-export default AlbumVendors;
+export default AlbumVendors2;

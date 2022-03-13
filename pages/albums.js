@@ -3,7 +3,7 @@ import StyleBase from '../components/StyleBase';
 import albumInfo from '../public/albumInfo.js';
 import Cta from '../components/Cta';
 import DynamicImage from '../components/DynamicImage';
-import AlbumVendors from '../components/AlbumVendors';
+import AlbumVendors2 from '../components/AlbumVendors2';
 
 const Albums = () => {
     return (
@@ -24,7 +24,7 @@ const Albums = () => {
                                     <DynamicImage width="700" height="700" alt={`Front cover of Bellflower album ${album.name}`} myLoader={`${album.imageFolder}/album-front.png`} />
                                 </div> 
                             </div>
-                            <AlbumVendors vendor={album.vendors} />
+                            <AlbumVendors2 vendor={album.vendors} />
                         </div>
                     )
                 })}

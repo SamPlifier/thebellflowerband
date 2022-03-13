@@ -1,9 +1,9 @@
 "use strict";
-exports.id = 729;
-exports.ids = [729];
+exports.id = 72;
+exports.ids = [72];
 exports.modules = {
 
-/***/ 2765:
+/***/ 3077:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -17,7 +17,7 @@ exports.modules = {
 
 
 
-const AlbumVendors = (props)=>{
+const AlbumVendors2 = (props)=>{
     return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
@@ -50,7 +50,7 @@ const AlbumVendors = (props)=>{
         ]
     }));
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AlbumVendors);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AlbumVendors2);
 
 
 /***/ }),
