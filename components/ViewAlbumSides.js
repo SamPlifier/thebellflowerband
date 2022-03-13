@@ -24,6 +24,18 @@ const ViewAlbumSides = (props) => {
                 </div>
             </section>
             <style jsx>{`
+            button {
+                margin: 2rem 0 0 0;
+                color: var(--main-orange);
+                font-family: 'BenchNine',sans-serif;
+                text-decoration: underline;
+                font-size: 4rem;
+                text-decoration-thickness: 2px;
+                text-decoration-color: #fff;
+                text-underline-offset: 2px;
+                background: none;
+                border: none;
+            }
             .album-controls {
                 display: grid;
                 grid-template-areas: "front back"

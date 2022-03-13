@@ -1,7 +1,6 @@
 import StyleBase from '../../components/StyleBase';
 import ViewAlbumSides from '../../components/ViewAlbumSides';
 import albumInfo from '../../public/albumInfo.js';
-import AlbumVendors from '../../components/AlbumVendors';
 
 const Album = () => {
     return (
@@ -11,7 +10,6 @@ const Album = () => {
                 {albumInfo.map((album, i) => {
                     return (
                         <div key={i}>
-                            <AlbumVendors vendor={album.vendors}/>
                             <h2>INFO</h2>
                             <p className="detail">Album Name<br/><span>{album.name}</span></p>
                             <p className="detail">Release Date<br/><span>{album.releaseDate}</span></p>
@@ -34,10 +32,6 @@ const Album = () => {
                 </div>
             </section>
             <style jsx>{`
-
-            .album-vendors {
-                // margin: 2rem 0;
-            }
             .albums {
                 text-align: left;
             }
