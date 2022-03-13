@@ -12,9 +12,11 @@ const Navigation = (props) => {
             <style jsx>{`
                 nav {
                     height: calc(100vh - 50px);
-                    max-width: 1200px;
+                    width: 100vw;
                     position: absolute;
-                    top: 50px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 50px;;
                     background: #333;
                     display: grid;
                     grid-template-areas: "1" 
