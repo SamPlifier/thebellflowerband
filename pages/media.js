@@ -6,7 +6,7 @@ import Image from 'next/image';
 const Media = () => {
     const [posterNum, setPosterNum] = useState(1);
     const posterCycle = (num) => {
-        if (num === 3) {
+        if (num === 4) {
             setPosterNum(1);
         } else {
             setPosterNum(posterNum + 1);
