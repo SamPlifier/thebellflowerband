@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import StyleBase from '../components/StyleBase';
 import albumInfo from '../public/albumInfo.js';
-import AlbumVendors from '../components/AlbumVendors';
+// import AlbumVendors from '../components/AlbumVendors';
 import Link from 'next/link';
 import DynamicImage from '../components/DynamicImage';
 
@@ -24,7 +24,7 @@ const Albums = () => {
                                 </div> 
                                 </div>
                             </Link>
-                            <AlbumVendors vendor={album.vendors}/>
+                            {/* <AlbumVendors vendor={album.vendors}/> */}
                         </div>
                     )
                 })}
