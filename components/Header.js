@@ -43,7 +43,7 @@ const Header = () => {
                 top: 0;
                 left: 50%;
                 transform: translateX(-50%);
-                max-width: 1000px;
+                max-width: 900px;
             }
             .navMenu {
                 grid-column-start: 1;

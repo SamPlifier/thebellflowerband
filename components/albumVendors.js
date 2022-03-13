@@ -1,3 +1,4 @@
+import Image from 'next/image';
 const AlbumVendors = (props) => {
     return (
         <div>
@@ -5,7 +6,11 @@ const AlbumVendors = (props) => {
             <div className="vendors">
                 {props.vendor.map(vendor => {
                     return (
-                    <a key={vendor.vendorName} className="vendor" href={vendor.vendorLink}>{vendor.vendorName}</a>
+                    <a key={vendor.vendorName} className="vendor" href={vendor.vendorLink}>
+                        <div className="vendor-logo-container">
+                            <Image src={`/${vendor.vendorLogo}`} layout='fill' objectFit='contain' alt={vendor.vendorAlt}/>
+                        </div>
+                    </a>
                     )
                 })}
             <style jsx>
@@ -13,29 +18,31 @@ const AlbumVendors = (props) => {
             .vendors {
                 width: 100%;
                 display: flex;
-                justify-content: center;
                 flex-direction: column;
-                margin-bottom: 2rem;
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+                justify-content: center;
             }
             .vendor {
                 text-align: center;
             }
             .vendors a {
                 color: var(--main-orange);
-                font-family: 'BenchNine', sans-serif;
-                font-size: 4rem;
-                text-decoration: underline;
-                text-decoration-thickness: 2px;
-                text-decoration-color: #fff;
-                text-underline-offset: 2px;
+                padding: 1rem;
+                width: auto;
+            }
+            .vendor-logo-container {
+                height: 40px;
+                width: auto;
+                display: block;
+                position: relative;
             }
             @media (min-width: 768px) {
                 .vendors {
                     flex-direction: row;
-                    align-items: center;
                 }
-                .vendors a:nth-child(2) {
-                    margin: 0 2rem;
+                .vendors a {
+                    width: 33%;
                 }
             }
             `}

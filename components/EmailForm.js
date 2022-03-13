@@ -149,30 +149,31 @@ const EmailForm2 = () => {
             </form>
             <style jsx>{`
                 .formContainer {
-                    padding-top: .2rem;
+                    padding-top: 2px;
                 }
                 form {
                   display: flex;
                   flex-direction: column;
                   justify-content: flex-start;
                   align-items: space-between;
-                  padding-bottom: 1rem;
+                  padding-bottom: 10px;
                 }
                 form label {
                   text-align: left;
                 }
                 label, button {
-                  margin-top: 1rem;
+                  margin-top: 10px;
                 }
                 input, textarea {
-                  margin-top: .5rem;
+                  margin-top: 5px;
                 }
                 form textarea {
                   resize: vertical;
                 }
                 button {
                     ${CtaStyle}
-                    margin-top: 2rem;
+                    margin-top: 20px;
+                    padding: 20px;
                 }
                 button::before {
                     ${CtaBeforeStyle}

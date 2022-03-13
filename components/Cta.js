@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const CtaStyle = `
     color: #fff;
-    padding: 1rem 1.5rem;
+    padding: 20px;
     text-align: center;
     position: relative;
     background-image: linear-gradient(45deg, #d81e5b 10%, var(--main-orange));
@@ -29,8 +29,12 @@ const Cta = (props) => {
     if (props.type === 'link') {
         return (
             <div className="cta" data-link-to={props.goTo}>
-                <Link href={props.goTo}><a>{props.text}</a></Link>
+                <Link href={props.goTo} as={props.as}><a>{props.text}</a></Link>
                 <style jsx>{`
+                .cta {
+                    display: flex;
+                    justify-content: center;
+                }
                     a {
                         ${CtaStyle}
                     }

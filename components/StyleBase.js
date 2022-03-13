@@ -78,7 +78,7 @@ const StyleBase = (props) => {
                 }
                 @media (min-width: 992px) {
                     .page-layout .page-layout {
-                        max-width: 1000px;
+                        max-width: 900px;
                     }
                 }
             `}</style>

@@ -19,7 +19,7 @@ const Merch = () => {
                                     <div className="description">
                                         <p>{item.name}</p>
                                         <p>&#36;{item.price}</p>
-                                        <Image className="imgContainer" src={`/${item.imgSrc}`} width="300" height="300"/>    
+                                        <Image className="imgContainer" src={`/${item.imgSrc}`} width="300" height="300"/>
                                     </div>
                             </div>
                         )
@@ -27,7 +27,9 @@ const Merch = () => {
                 </div>
                 <h2>PURCHASING</h2>
                 <p>Besides the album, items are only available at shows at the moment. We currently accept <span>Credit Cards</span>, <span>Venmo</span>, and <span>Paypal</span>. Contact us below if you have any questions about stock or payment details.</p>
-
+                <div className="bernieContainer">
+                    <Image className="imgContainer" src={`/coldBernie.jpg`} layout='fill' objectFit='cover'/>
+                </div>
             </section>
             <style jsx>{`
             .payment-types {
@@ -49,12 +51,17 @@ const Merch = () => {
                 margin: 1rem;
                 width: 50%;
             }
+            .bernieContainer {
+                width: 100%;
+                position: relative;
+                height: 500px;
+                margin-bottom: 2rem;
+            }
             @media (min-width: 768px) {
                 .merchItem {
                     width: calc((100% / 3) - 4rem);
                 }
             }
-
             `}</style>
         </StyleBase>
     )

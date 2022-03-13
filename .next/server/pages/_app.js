@@ -121,7 +121,7 @@ const router_namespaceObject = require("next/router");
 
 
 const Header = ()=>{
-    const { 0: menuOpen , 1: setMenuOpen  } = (0,external_react_.useState)(false);
+    const { /*#__PURE__*/ 0: menuOpen , 1: setMenuOpen  } = (0,external_react_.useState)(false);
     const formatPageName = (name)=>{
         if (name.includes('[')) {
             let lastSlash = name.lastIndexOf('/');
@@ -137,41 +137,41 @@ const Header = ()=>{
         setMenuOpen(!menuOpen);
     };
     return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-        className: "jsx-b7eeeb81e26ba983" + " " + "header",
+        className: "jsx-80c0226889f6143" + " " + "header",
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("hr", {
-                className: "jsx-b7eeeb81e26ba983" + " " + "orange"
+                className: "jsx-80c0226889f6143" + " " + "orange"
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 tabIndex: "0",
                 "data-status": menuStatus,
                 onClick: toggleMenu,
-                className: "jsx-b7eeeb81e26ba983" + " " + "navMenu",
+                className: "jsx-80c0226889f6143" + " " + "navMenu",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "jsx-b7eeeb81e26ba983" + " " + "line--1"
+                        className: "jsx-80c0226889f6143" + " " + "line--1"
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "jsx-b7eeeb81e26ba983" + " " + "line--2"
+                        className: "jsx-80c0226889f6143" + " " + "line--2"
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "jsx-b7eeeb81e26ba983" + " " + "line--3"
+                        className: "jsx-80c0226889f6143" + " " + "line--3"
                     })
                 ]
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: "jsx-b7eeeb81e26ba983" + " " + "siteInfo",
+                className: "jsx-80c0226889f6143" + " " + "siteInfo",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                        className: "jsx-b7eeeb81e26ba983",
+                        className: "jsx-80c0226889f6143",
                         children: pageName
                     }),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                        className: "jsx-b7eeeb81e26ba983" + " " + "siteUrl",
+                        className: "jsx-80c0226889f6143" + " " + "siteUrl",
                         children: [
                             "bellflower",
                             /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                className: "jsx-b7eeeb81e26ba983" + " " + "highlight",
+                                className: "jsx-80c0226889f6143" + " " + "highlight",
                                 children: "band"
                             }),
                             ".com"
@@ -183,8 +183,8 @@ const Header = ()=>{
                 toggleMenu: toggleMenu
             }),
             jsx_runtime_.jsx((style_default()), {
-                id: "b7eeeb81e26ba983",
-                children: ".header.jsx-b7eeeb81e26ba983{display:grid;\ngrid-template-rows:50px;\ngrid-template-columns:50px auto;\nbackground:#333;\nz-index:10;\nposition:fixed;\ntop:0;\nleft:50%;\n-webkit-transform:translateX(-50%);\n-moz-transform:translateX(-50%);\n-ms-transform:translateX(-50%);\ntransform:translateX(-50%);\nmax-width:1000px}\n.navMenu.jsx-b7eeeb81e26ba983{grid-column-start:1;\ngrid-column-end:2;\ngrid-row-start:1;\ngrid-row-end:2;\ndisplay:-webkit-box;\ndisplay:-webkit-flex;\ndisplay:-ms-flexbox;\ndisplay:flex;\n-webkit-flex-direction:column;\n-ms-flex-direction:column;\nflex-direction:column;\n-webkit-justify-content:center;\njustify-content:center;\n-webkit-align-items:center;\n-webkit-box-align:center;\n-ms-flex-align:center;\nalign-items:center;\n-webkit-transition:all 1s ease;\ntransition:all 1s ease;\nwidth:50px}\n.navMenu.jsx-b7eeeb81e26ba983:hover{cursor:pointer}\n.navMenu.jsx-b7eeeb81e26ba983:hover, .navMenu.jsx-b7eeeb81e26ba983:active, .navMenu.jsx-b7eeeb81e26ba983:focus-visible{background:var(--main-orange)}\n.navMenu.jsx-b7eeeb81e26ba983:hover .line--1.jsx-b7eeeb81e26ba983, .navMenu.jsx-b7eeeb81e26ba983:hover .line--2.jsx-b7eeeb81e26ba983, .navMenu.jsx-b7eeeb81e26ba983:hover .line--3.jsx-b7eeeb81e26ba983, .navMenu.jsx-b7eeeb81e26ba983:active .line--1.jsx-b7eeeb81e26ba983, .navMenu.jsx-b7eeeb81e26ba983:active .line--2.jsx-b7eeeb81e26ba983, .navMenu.jsx-b7eeeb81e26ba983:active .line--3.jsx-b7eeeb81e26ba983, .navMenu.jsx-b7eeeb81e26ba983:focus-visible .line--1.jsx-b7eeeb81e26ba983, .navMenu.jsx-b7eeeb81e26ba983:focus-visible .line--2.jsx-b7eeeb81e26ba983, .navMenu.jsx-b7eeeb81e26ba983:focus-visible .line--3.jsx-b7eeeb81e26ba983{background:#fff}\n.line--1.jsx-b7eeeb81e26ba983, .line--2.jsx-b7eeeb81e26ba983, .line--3.jsx-b7eeeb81e26ba983{width:30px;\nheight:2px;\nbackground:var(--main-orange)}\n[data-status=\"open\"].jsx-b7eeeb81e26ba983 .line--1.jsx-b7eeeb81e26ba983, [data-status=\"open\"].jsx-b7eeeb81e26ba983 .line--3.jsx-b7eeeb81e26ba983{-webkit-transition:all .5s;\ntransition:all .5s;\ntransition-timing-function:cubic-bezier(.24, .66, .78, .58)}\n[data-status=\"open\"].jsx-b7eeeb81e26ba983 .line--2.jsx-b7eeeb81e26ba983{-webkit-transition:all .3s;\ntransition:all .3s}\n.line--2.jsx-b7eeeb81e26ba983{margin:5px 0}\n[data-status=\"close\"].jsx-b7eeeb81e26ba983 .line--1.jsx-b7eeeb81e26ba983{-webkit-transition:all .5s;\ntransition:all .5s;\n-webkit-transform:rotate(225deg);\n-moz-transform:rotate(225deg);\n-ms-transform:rotate(225deg);\ntransform:rotate(225deg);\nposition:relative;\ntop:1px}\n[data-status=\"close\"].jsx-b7eeeb81e26ba983 .line--2.jsx-b7eeeb81e26ba983{-webkit-transition:all 1s;\ntransition:all 1s;\ndisplay:none}\n[data-status=\"close\"].jsx-b7eeeb81e26ba983 .line--3.jsx-b7eeeb81e26ba983{-webkit-transition:all .5s;\ntransition:all .5s;\n-webkit-transform:rotate(-225deg);\n-moz-transform:rotate(-225deg);\n-ms-transform:rotate(-225deg);\ntransform:rotate(-225deg);\nposition:relative;\nbottom:1px}\n.siteInfo.jsx-b7eeeb81e26ba983{display:-webkit-box;\ndisplay:-webkit-flex;\ndisplay:-ms-flexbox;\ndisplay:flex;\n-webkit-box-pack:justify;\n-webkit-justify-content:space-between;\njustify-content:space-between;\n-webkit-align-items:center;\n-webkit-box-align:center;\n-ms-flex-align:center;\nalign-items:center;\nheight:50px;\npadding-right:10px;\npadding-left:10px}\n.siteUrl.jsx-b7eeeb81e26ba983{grid-column-start:2;\ngrid-column-end:3;\ngrid-row-start:1;\ngrid-row-end:2;\nplace-self:center;\ncolor:#fff}\n.siteUrl.jsx-b7eeeb81e26ba983 .highlight.jsx-b7eeeb81e26ba983{color:var(--main-orange)}\nhr.orange.jsx-b7eeeb81e26ba983{position:absolute;\nborder:none;\nbackground:var(--main-orange);\nheight:2px;\nwidth:100vw;\nleft:0;\nbottom:0;\nmargin:0;\nleft:50%;\n-webkit-transform:translateX(-50%);\n-moz-transform:translateX(-50%);\n-ms-transform:translateX(-50%);\ntransform:translateX(-50%)}"
+                id: "80c0226889f6143",
+                children: ".header.jsx-80c0226889f6143{display:grid;\ngrid-template-rows:50px;\ngrid-template-columns:50px auto;\nbackground:#333;\nz-index:10;\nposition:fixed;\ntop:0;\nleft:50%;\n-webkit-transform:translateX(-50%);\n-moz-transform:translateX(-50%);\n-ms-transform:translateX(-50%);\ntransform:translateX(-50%);\nmax-width:900px}\n.navMenu.jsx-80c0226889f6143{grid-column-start:1;\ngrid-column-end:2;\ngrid-row-start:1;\ngrid-row-end:2;\ndisplay:-webkit-box;\ndisplay:-webkit-flex;\ndisplay:-ms-flexbox;\ndisplay:flex;\n-webkit-flex-direction:column;\n-ms-flex-direction:column;\nflex-direction:column;\n-webkit-justify-content:center;\njustify-content:center;\n-webkit-align-items:center;\n-webkit-box-align:center;\n-ms-flex-align:center;\nalign-items:center;\n-webkit-transition:all 1s ease;\ntransition:all 1s ease;\nwidth:50px}\n.navMenu.jsx-80c0226889f6143:hover{cursor:pointer}\n.navMenu.jsx-80c0226889f6143:hover, .navMenu.jsx-80c0226889f6143:active, .navMenu.jsx-80c0226889f6143:focus-visible{background:var(--main-orange)}\n.navMenu.jsx-80c0226889f6143:hover .line--1.jsx-80c0226889f6143, .navMenu.jsx-80c0226889f6143:hover .line--2.jsx-80c0226889f6143, .navMenu.jsx-80c0226889f6143:hover .line--3.jsx-80c0226889f6143, .navMenu.jsx-80c0226889f6143:active .line--1.jsx-80c0226889f6143, .navMenu.jsx-80c0226889f6143:active .line--2.jsx-80c0226889f6143, .navMenu.jsx-80c0226889f6143:active .line--3.jsx-80c0226889f6143, .navMenu.jsx-80c0226889f6143:focus-visible .line--1.jsx-80c0226889f6143, .navMenu.jsx-80c0226889f6143:focus-visible .line--2.jsx-80c0226889f6143, .navMenu.jsx-80c0226889f6143:focus-visible .line--3.jsx-80c0226889f6143{background:#fff}\n.line--1.jsx-80c0226889f6143, .line--2.jsx-80c0226889f6143, .line--3.jsx-80c0226889f6143{width:30px;\nheight:2px;\nbackground:var(--main-orange)}\n[data-status=\"open\"].jsx-80c0226889f6143 .line--1.jsx-80c0226889f6143, [data-status=\"open\"].jsx-80c0226889f6143 .line--3.jsx-80c0226889f6143{-webkit-transition:all .5s;\ntransition:all .5s;\ntransition-timing-function:cubic-bezier(.24, .66, .78, .58)}\n[data-status=\"open\"].jsx-80c0226889f6143 .line--2.jsx-80c0226889f6143{-webkit-transition:all .3s;\ntransition:all .3s}\n.line--2.jsx-80c0226889f6143{margin:5px 0}\n[data-status=\"close\"].jsx-80c0226889f6143 .line--1.jsx-80c0226889f6143{-webkit-transition:all .5s;\ntransition:all .5s;\n-webkit-transform:rotate(225deg);\n-moz-transform:rotate(225deg);\n-ms-transform:rotate(225deg);\ntransform:rotate(225deg);\nposition:relative;\ntop:1px}\n[data-status=\"close\"].jsx-80c0226889f6143 .line--2.jsx-80c0226889f6143{-webkit-transition:all 1s;\ntransition:all 1s;\ndisplay:none}\n[data-status=\"close\"].jsx-80c0226889f6143 .line--3.jsx-80c0226889f6143{-webkit-transition:all .5s;\ntransition:all .5s;\n-webkit-transform:rotate(-225deg);\n-moz-transform:rotate(-225deg);\n-ms-transform:rotate(-225deg);\ntransform:rotate(-225deg);\nposition:relative;\nbottom:1px}\n.siteInfo.jsx-80c0226889f6143{display:-webkit-box;\ndisplay:-webkit-flex;\ndisplay:-ms-flexbox;\ndisplay:flex;\n-webkit-box-pack:justify;\n-webkit-justify-content:space-between;\njustify-content:space-between;\n-webkit-align-items:center;\n-webkit-box-align:center;\n-ms-flex-align:center;\nalign-items:center;\nheight:50px;\npadding-right:10px;\npadding-left:10px}\n.siteUrl.jsx-80c0226889f6143{grid-column-start:2;\ngrid-column-end:3;\ngrid-row-start:1;\ngrid-row-end:2;\nplace-self:center;\ncolor:#fff}\n.siteUrl.jsx-80c0226889f6143 .highlight.jsx-80c0226889f6143{color:var(--main-orange)}\nhr.orange.jsx-80c0226889f6143{position:absolute;\nborder:none;\nbackground:var(--main-orange);\nheight:2px;\nwidth:100vw;\nleft:0;\nbottom:0;\nmargin:0;\nleft:50%;\n-webkit-transform:translateX(-50%);\n-moz-transform:translateX(-50%);\n-ms-transform:translateX(-50%);\ntransform:translateX(-50%)}"
             })
         ]
     }));
@@ -322,24 +322,24 @@ const EmailForm2 = ()=>{
         });
     };
     return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-        className: "jsx-5c73dfef11ab69f0" + " " + "formContainer",
+        className: "jsx-ef2925012b637164" + " " + "formContainer",
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                className: "jsx-5c73dfef11ab69f0",
+                className: "jsx-ef2925012b637164",
                 children: "GET IN TOUCH"
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("form", {
                 onSubmit: handleFormSubmit,
                 noValidate: true,
-                className: "jsx-5c73dfef11ab69f0",
+                className: "jsx-ef2925012b637164",
                 children: [
                     serverState.status && /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                        className: "jsx-5c73dfef11ab69f0" + " " + ((!serverState.status.ok ? "errorMsg" : "") || ""),
+                        className: "jsx-ef2925012b637164" + " " + ((!serverState.status.ok ? "errorMsg" : "") || ""),
                         children: serverState.status.msg
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("label", {
                         htmlFor: "email",
-                        className: "jsx-5c73dfef11ab69f0",
+                        className: "jsx-ef2925012b637164",
                         children: "Email"
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("input", {
@@ -351,12 +351,12 @@ const EmailForm2 = ()=>{
                         noValidate: true,
                         autoComplete: "off",
                         required: true,
-                        className: "jsx-5c73dfef11ab69f0"
+                        className: "jsx-ef2925012b637164"
                     }),
                     renderErrors("email"),
                     /*#__PURE__*/ jsx_runtime_.jsx("label", {
                         htmlFor: "message",
-                        className: "jsx-5c73dfef11ab69f0",
+                        className: "jsx-ef2925012b637164",
                         children: "Message"
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("textarea", {
@@ -368,21 +368,21 @@ const EmailForm2 = ()=>{
                         rows: "2",
                         noValidate: true,
                         required: true,
-                        className: "jsx-5c73dfef11ab69f0"
+                        className: "jsx-ef2925012b637164"
                     }),
                     renderErrors('message'),
                     /*#__PURE__*/ jsx_runtime_.jsx("button", {
                         type: "submit",
                         disable: serverState.sending.toString(),
-                        className: "jsx-5c73dfef11ab69f0",
+                        className: "jsx-ef2925012b637164",
                         children: "SEND"
                     })
                 ]
             }),
             jsx_runtime_.jsx((style_default()), {
-                id: "5c73dfef11ab69f0",
-                children: `.formContainer.jsx-5c73dfef11ab69f0{padding-top:.2rem}
-form.jsx-5c73dfef11ab69f0{display:-webkit-box;
+                id: "ef2925012b637164",
+                children: `.formContainer.jsx-ef2925012b637164{padding-top:2px}
+form.jsx-ef2925012b637164{display:-webkit-box;
 display:-webkit-flex;
 display:-ms-flexbox;
 display:flex;
@@ -397,16 +397,17 @@ justify-content:flex-start;
 -webkit-box-align:space-between;
 -ms-flex-align:space-between;
 align-items:space-between;
-padding-bottom:1rem}
-form.jsx-5c73dfef11ab69f0 label.jsx-5c73dfef11ab69f0{text-align:left}
-label.jsx-5c73dfef11ab69f0, button.jsx-5c73dfef11ab69f0{margin-top:1rem}
-input.jsx-5c73dfef11ab69f0, textarea.jsx-5c73dfef11ab69f0{margin-top:.5rem}
-form.jsx-5c73dfef11ab69f0 textarea.jsx-5c73dfef11ab69f0{resize:vertical}
-button.jsx-5c73dfef11ab69f0{${CtaStyle}
-                    margin-top: 2rem}
-button.jsx-5c73dfef11ab69f0::before{${CtaBeforeStyle}
+padding-bottom:10px}
+form.jsx-ef2925012b637164 label.jsx-ef2925012b637164{text-align:left}
+label.jsx-ef2925012b637164, button.jsx-ef2925012b637164{margin-top:10px}
+input.jsx-ef2925012b637164, textarea.jsx-ef2925012b637164{margin-top:5px}
+form.jsx-ef2925012b637164 textarea.jsx-ef2925012b637164{resize:vertical}
+button.jsx-ef2925012b637164{${CtaStyle}
+                    margin-top: 20px;
+padding:20px}
+button.jsx-ef2925012b637164::before{${CtaBeforeStyle}
                 }
-button.jsx-5c73dfef11ab69f0:hover::before{${CtaHoverBeforeStyle}
+button.jsx-ef2925012b637164:hover::before{${CtaHoverBeforeStyle}
                 }`
             })
         ]

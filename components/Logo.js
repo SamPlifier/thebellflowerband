@@ -9,8 +9,9 @@ const Logo = () => {
                 align-items: center;
               }
               .logo img {
-                width: 80%;
+                width: 90%;
                 min-width: 300px;
+                max-width: calc(900px * .9)
               }
             `}
             </style>

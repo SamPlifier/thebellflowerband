@@ -13,19 +13,19 @@ const ViewAlbumSides = (props) => {
         <StyleBase>
             <section>
                 <div className="album-container">
-                <img src=""/>
-                <img className="icon" src={`/albums/${album}/album-${inView}.png`} />
                     <div className="album-controls">
-                        <button className={`front ${inView === 'front' ? 'active' : ''}`} onClick={() => {updateInView('front')}}>Front Cover</button>
-                        <button className={`back ${inView === 'back' ? 'active' : ''}`} onClick={() => {updateInView('back')}}>Back Cover</button>
-                        <button className={`left ${inView === 'left' ? 'active' : ''}`} onClick={() => {updateInView('left')}}>Inside Left</button>
-                        <button className={`right ${inView === 'right' ? 'active' : ''}`} onClick={() => {updateInView('right')}}>Inside Right</button>
+                            <button className={`front ${inView === 'front' ? 'active' : ''}`} onClick={() => {updateInView('front')}}>Front</button>
+                            <button className={`back ${inView === 'back' ? 'active' : ''}`} onClick={() => {updateInView('back')}}>Back</button>
+                            <button className={`left ${inView === 'left' ? 'active' : ''}`} onClick={() => {updateInView('left')}}>Inside Left</button>
+                            <button className={`right ${inView === 'right' ? 'active' : ''}`} onClick={() => {updateInView('right')}}>Inside Right</button>
+                        </div>
+                    <div className="album-side">
+                        <img src={`/albums/${album}/album-${inView}.png`} />
                     </div>
                 </div>
             </section>
             <style jsx>{`
             button {
-                margin: 2rem 0 0 0;
                 color: var(--main-orange);
                 font-family: 'BenchNine',sans-serif;
                 text-decoration: underline;
@@ -36,30 +36,53 @@ const ViewAlbumSides = (props) => {
                 background: none;
                 border: none;
             }
+            button:hover {
+                cursor: pointer;
+            }
+            button.active {
+                color: #fff;
+            }
             .album-controls {
                 display: grid;
                 grid-template-areas: "front back"
                              "left right";
-                grid-template-rows: "3rem 3rem";
-                grid-template-columns: "50% 50%";
+                grid-template-rows: auto;
+                grid-template-columns: 50%;
                 grid-row-gap: 1rem;
                 grid-column-gap: 1rem;
-                margin: 2rem 0;
+                margin: 2rem auto;
             }
             .front {
                 grid-area: front;
+                text-align: right;
             }
             .back {
                 grid-area: back;
+                text-align: left;
             }
             .left {
                 grid-area: left;
+                text-align: right;
             }
             .right {
                 grid-area: right;
+                text-align: left;
             }
-            img {
+            .album-side {
+                display: flex;
+            }
+            .album-side img {
                 width: 100%;
+            }
+
+            @media (min-width: 767px) {
+                .albumContainer {
+
+                }
+                .album-side img {
+                    max-width: 600px;
+                    margin: 0 auto;
+                }
             }
             `}</style>
         </StyleBase>
