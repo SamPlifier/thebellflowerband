@@ -224,8 +224,8 @@ const Media = () => {
                     @media only screen and (min-width:768px) {
                         iframe, .loading {
                             width: 100%;
-                            height: calc(56.25vw - 6rem);
                             height: calc((56.25vw - 1rem) / 2);
+                            max-height: 306px;
                         }
                         .loading {
                             left: 0;
@@ -239,12 +239,13 @@ const Media = () => {
                         .videoContainer {
                             width: calc(50% - 1rem);
                             height: calc((56.25vw - 1rem) / 2);
+                            max-height: 306px;
                         }
                         .videoContainer:nth-child(odd) {
                             margin-right: 1rem;
                         }
                         .videoContainer:nth-child(even) {
-                            left: 1rem;
+                            margin-left: 1rem;
                         }
                         .audioContainer {
                             width: calc(50% - 1rem);
