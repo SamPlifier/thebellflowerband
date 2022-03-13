@@ -3,7 +3,7 @@ const franklinPhoto = 'franklin-original.png';
 const natashaPhoto = 'natasha-1.png';
 const davidPhoto = 'david-original.png';
 const jeffPhoto = 'jeff-original.png';
-const samPhoto = 'members/sam-1.png';
+const samPhoto = 'sam-1.png';
 const instruments = [
     {
         musician: 'Franklin Bellflower',
