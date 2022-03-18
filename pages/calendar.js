@@ -3,6 +3,9 @@ import StyleBase from '../components/StyleBase';
 import React from 'react';
 import axios from 'axios';
 import NumberOfEvents from '../components/NumberOfEvents';
+import Cta from '../components/Cta';
+import navigate from '../public/navigate-icon-01.svg';
+ 
 class Calendar extends React.Component {
     state = {
         calendarEvents: [],
@@ -12,12 +15,13 @@ class Calendar extends React.Component {
     componentDidMount() {
         let now = new Date();
         let startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0);
-        let endOfDayOneMonthOut = new Date(now.getFullYear(), now.getMonth() + 1, now.getDate(), 23, 59, 59);
+        let endOfDayOneMonthOut = new Date(now.getFullYear(), now.getMonth() + 3, now.getDate(), 23, 59, 59);
         axios.get('https://www.googleapis.com/calendar/v3/calendars/thebellflowerband%40gmail.com/events?key=AIzaSyA73ezNBuEPQSSjMgoMjfiFa5wwT1TJht8')
             .then(res => {
                 let allEvents = res.data.items;
                 allEvents = allEvents.sort((a, b) => (Date.parse(a.start.dateTime.toString()) > Date.parse(b.start.dateTime.toString()) ? 1: -1));
                 let futureEvents = [];
+                // console.log(allEvents);
                 allEvents.map((calEvent, i) => {
                     let eventTime = new Date(calEvent.start.dateTime);
                     if (eventTime > startOfToday && eventTime < endOfDayOneMonthOut) {
@@ -83,31 +87,41 @@ class Calendar extends React.Component {
     render() {
         const eventsList = (
             this.state.calendarEvents.map((calEvent, i) => {
+                // window.thedescription = calEvent.description;
                 return  <div className="eventCard" key={i}>
                             <h3>{calEvent.summary}</h3>
                             <div className="detailsContainer">
                                 <div className="details">
                                     <div className="event"><img className="icon" src={require('../public/time-icon-01.svg')} /><p className="time">{this.date(calEvent.start.dateTime, 'day')}, {this.date(calEvent.start.dateTime, 'month')} {this.date(calEvent.start.dateTime, 'dayNum')}  {this.date(calEvent.start.dateTime, 'localTime')} - {this.date(calEvent.end.dateTime, 'localTime')}</p></div>
                                     <div className="event"><img className="icon" src={require('../public/pin-icon-01.svg')} /><p className="pin">{calEvent.location}</p></div>
-                                    <div className="event"><img className="icon" src={require('../public/description-icon-01.svg')} /><p className="description">{calEvent.description}</p></div>
+                                    {/* <div className="event"><img className="icon" src={require('../public/description-icon-01.svg')} /><p className="description">{calEvent.description}</p></div> */}
+                                    <div className="event"><img className="icon" src={require('../public/description-icon-01.svg')} /><p className="description" dangerouslySetInnerHTML={{__html: calEvent.description}}></p></div>
                                     <div className="buttons">
-                                        <a className="directions" alt="directions link" href={this.formatMapsUrl(calEvent.location)}><div className="event"><img className="icon" src={require('../public/navigate-icon-01.svg')} /><p className="navigate">Navigate</p></div></a>
-                                        <a className="openInCalendar" alt="view in google calendar" href={calEvent.htmlLink}><div className="event"><img className="icon" src={require('../public/calendar-icon-01.svg')} /><p className="calendar">Calendar</p></div></a>
+                                        <div className="cta-container">
+                                            <Cta type="button" alt="directions link" goTo={this.formatMapsUrl(calEvent.location)} text="NAVIGATE" icon={require('../public/navigate-icon-01.svg')} />
+                                        </div>
+                                        <div className="cta-container">
+                                            <Cta type="button" alt="view in google calendar" goTo={calEvent.htmlLink} icon={require('../public/calendar-icon-01.svg')} text="CALENDAR" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         <style jsx>{`
-                        .eventCard {
-                            padding: 1rem;
-                            margin: 2rem 0;
-                            text-align: left;
+                        html-blob br {
+                            display: none;
                         }
-                        .eventCard:last-child {
-                            margin-bottom: 0;
+                        .eventCard {
+                            text-align: left;
+                            padding: 20px 0;
+                            border-bottom: 2px solid orange;
+                            margin-bottom: 20px;
                         }
                         .icon {
                             height: 1.5rem;
                             position: relative;
+                            background: var(--main-orange);
+                            padding: 5px;
+                            border-radius: 10px;
                             top: 5px;
                         }
                         .event {
@@ -116,69 +130,29 @@ class Calendar extends React.Component {
                             width: 100%;
                             word-break: break-word;
                         }
-                        .time {
-                            margin-left: 10px;
-                        }                                
-                        .pin {
-                            margin-left: 6px;
-                        }                            
-                        .description {
-                            margin-left: 9px;
-                        }                            
-                        .calendar {
-                            margin-left: 10px;
-                        }
-                        .navigate {
-                            margin-left: 9px;
+                        .event p {
+                            margin: 15px 0 0 10px;
                         }
                         .buttons {
-                            display: flex;
-                            justify-content: center;
-                            margin: 1rem 0;
-                            flex-direction: column;
-                        }
-                        .buttons .event:first-child {
-                            margin: 0 0 1rem 0;
-                        }
-                        .buttons .event:last-child {
-                            margin: 1rem 0 0 0;
-                        }
-                        .buttons:hover {
-                            cursor: pointer;
-                        }
-                        .buttons .event {
+                            display: inline-grid;
+                            grid-template-rows: auto auto;
+                            grid-gap: 10px;
+                            margin: 20px 0;
                             width: 100%;
-                            border: 2px solid #fff;
-                            text-align: center;
+                        }
+                        .cta-container {
+                            width: 100%;
                             display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            background: var(--main-orange);
-                            transition: background ease .5s;
-                            margin: 1rem;
+                            justify-content: flex-start;
                         }
-
-                        .buttons .event:hover {
-                            background: #fff;
-                        }
-                        .buttons .event p {
-                            color: #333;
-                        }
-                        .buttons .icon {
-                            top: 0px;
-                        }
-                        @media only screen and (min-width:700px) {
+                        @media (min-width: 400px) {
                             .buttons {
-                                flex-direction: row;
-                                justify-content: space-between;
+                                grid-template-rows: auto;
+                                grid-template-columns: auto auto;
                             }
-                            .buttons .event:first-child, .buttons .event:last-child {
-                                margin: 0;
-                                padding: 0 1rem;
-                                box-sizing: border-box;
-                            }
-                            .directions, .openInCalendar {
-                                width: calc(50% - 1rem);
+                            .cta-container {
+                                width: 50%;
+                                justify-content: center;
                             }
                         }
                         `}</style>

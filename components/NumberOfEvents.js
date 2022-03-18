@@ -1,9 +1,9 @@
 const NumberOfEvents = (props) => {
     const noError = () => {
         if (props.events === 1) {
-            return <p className="title">There is {props.events} event in the next 30 days.</p>
+            return <p className="title">There is {props.events} event within the next 3 months.</p>
         } else {
-            return <p className="title">There are {props.events} events in the next 30 days.</p>
+            return <p className="title">There are {props.events} events within the next 3 months.</p>
         }
     }
     const error = () => {

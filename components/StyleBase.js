@@ -71,6 +71,10 @@ const StyleBase = (props) => {
                 .page-layout .page-layout {
                     width: calc(100% - 2rem);
                 }
+                .cta-icon {
+                    margin-right: 10px;
+                    height: 20px;
+                }
                 @media (min-width: 768px) {
                     .page-layout .page-layout {
                         width: calc(100% - 4rem);

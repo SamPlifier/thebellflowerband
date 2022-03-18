@@ -160,6 +160,7 @@ const Media = () => {
                         top: -5.5rem;
                         left: 50%;
                         transform: translateX(-50%);
+                        width: 100%;
                     }
                     .loading {
                         display: -webkit-box;

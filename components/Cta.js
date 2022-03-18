@@ -26,15 +26,19 @@ const CtaHoverBeforeStyle = `
 `
 
 const Cta = (props) => {
+    let icon = '';
+    if (props.icon !== undefined) {
+        icon = <img className="cta-icon" src={props.icon} height='18px'/>;
+    }
     if (props.type === 'link') {
         return (
             <div className="cta" data-link-to={props.goTo}>
-                <Link href={props.goTo} as={props.as}><a>{props.text}</a></Link>
+                <Link href={props.goTo} as={props.as}><a>{icon} {props.text}</a></Link>
                 <style jsx>{`
-                .cta {
-                    display: flex;
-                    justify-content: center;
-                }
+                    .cta {
+                        display: flex;
+                        justify-content: center;
+                    }
                     a {
                         ${CtaStyle}
                     }
@@ -47,6 +51,7 @@ const Cta = (props) => {
                     a:hover {
                         cursor: pointer;
                     }
+
                 `}
                 </style>
             </div>
@@ -54,12 +59,13 @@ const Cta = (props) => {
     } else {
         return (
             <div className="cta">
-                <button type="button">{props.text}</button>
+                <button type="button">{icon} {props.text}</button>
                 <style jsx>{`
                     button {
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        border: none;
                         ${CtaStyle}
                     }
                     button::before {
@@ -71,7 +77,6 @@ const Cta = (props) => {
                     button:hover {
                         cursor: pointer;
                     }
-
                 `}
                 </style>
             </div>
