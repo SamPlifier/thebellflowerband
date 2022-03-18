@@ -98,10 +98,10 @@ class Calendar extends React.Component {
                                     <div className="event"><img className="icon" src={require('../public/description-icon-01.svg')} /><p className="description" dangerouslySetInnerHTML={{__html: calEvent.description}}></p></div>
                                     <div className="buttons">
                                         <div className="cta-container">
-                                            <Cta type="button" alt="directions link" goTo={this.formatMapsUrl(calEvent.location)} text="NAVIGATE" icon={require('../public/navigate-icon-01.svg')} />
+                                            <Cta type="link" alt="directions link" goTo={this.formatMapsUrl(calEvent.location)} text="NAVIGATE" icon={require('../public/navigate-icon-01.svg')} />
                                         </div>
                                         <div className="cta-container">
-                                            <Cta type="button" alt="view in google calendar" goTo={calEvent.htmlLink} icon={require('../public/calendar-icon-01.svg')} text="CALENDAR" />
+                                            <Cta type="link" alt="view in google calendar" goTo={calEvent.htmlLink} icon={require('../public/calendar-icon-01.svg')} text="CALENDAR" />
                                         </div>
                                     </div>
                                 </div>
