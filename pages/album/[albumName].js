@@ -26,11 +26,11 @@ const Album = () => {
                                     <p className="detail">Release Date<br/><span>{album.releaseDate}</span></p>
                                 </div>
                                 <div className="right">
-                                    <div className="detail">Tracks<br/>
+                                    <p className="detail">Tracks<br/>
                                         <span>{album.songs.map((song, k) => {
                                             return <div key={k}><span>{k + 1}. {song}</span><br/></div>
                                         })}</span>
-                                    </div>
+                                    </p>
                                 </div>
                             </div>
                             <h2>ALBUM COVER</h2>
