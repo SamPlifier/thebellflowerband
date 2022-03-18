@@ -150,9 +150,11 @@ class Calendar extends React.Component {
                                 grid-template-rows: auto;
                                 grid-template-columns: auto auto;
                             }
-                            .cta-container {
-                                width: 50%;
-                                justify-content: center;
+                            .cta-container:first-child {
+                                justify-content: flex-end;
+                            }
+                            .cta-container:last-child {
+                                justify-content: flex-start;
                             }
                         }
                         `}</style>

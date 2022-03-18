@@ -22,6 +22,7 @@ const AlbumVendors2 = (props) => {
                 flex-wrap: wrap;
                 margin-bottom: 20px;
                 justify-content: center;
+
             }
             .vendor {
                 text-align: center;
@@ -30,13 +31,20 @@ const AlbumVendors2 = (props) => {
                 color: var(--main-orange);
                 padding: 1rem;
                 width: auto;
+                display: flex;
+                justify-content: center;
+            }
+            .vendors a:nth-child(1) {
+                transform: translateX(-26px);
             }
             .vendor-logo-container {
                 height: 40px;
-                width: auto;
+                width: 175px;
                 display: block;
                 position: relative;
+                transform: unset;
             }
+
             @media (min-width: 768px) {
                 .vendors {
                     flex-direction: row;
