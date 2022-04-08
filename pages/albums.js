@@ -40,7 +40,10 @@ const Albums = () => {
                 position: relative;
             }
             .cta-container {
-                transform: translateY(100%);
+                transform: translate(-50%, 126px);
+                z-index: 2;
+                position: absolute;
+                left: 50%;
                 z-index: 2;
             }
             .album img {

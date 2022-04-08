@@ -21,7 +21,6 @@ class Calendar extends React.Component {
                 let allEvents = res.data.items;
                 allEvents = allEvents.sort((a, b) => (Date.parse(a.start.dateTime.toString()) > Date.parse(b.start.dateTime.toString()) ? 1: -1));
                 let futureEvents = [];
-                // console.log(allEvents);
                 allEvents.map((calEvent, i) => {
                     let eventTime = new Date(calEvent.start.dateTime);
                     if (eventTime > startOfToday && eventTime < endOfDayOneMonthOut) {
